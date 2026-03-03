@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply transition-all duration-500 ease-in-out antialiased;
+    }
+}
+
+:root {
+    --glow-1: 138, 79, 255;
+    /* Purple */
+    --glow-2: 255, 153, 51;
+    /* Saffron */
+    --glow-3: 20, 184, 166;
+    /* Teal */
+    --bg-main: 248, 250, 249;
+}
+
+.dark {
+    --glow-1: 109, 40, 217;
+    --glow-2: 124, 58, 237;
+    --glow-3: 15, 118, 110;
+    --bg-main: 3, 7, 18;
+}
+
+body {
+    margin: 0;
+    font-family: 'Outfit', 'Inter', system-ui, sans-serif;
+    background-color: rgb(var(--bg-main));
+    @apply text-slate-800 dark:text-slate-100 overflow-x-hidden;
+    background-image:
+        radial-gradient(at 0% 0%, rgba(var(--glow-1), 0.15) 0px, transparent 50%),
+        radial-gradient(at 100% 0%, rgba(var(--glow-2), 0.1) 0px, transparent 50%),
+        radial-gradient(at 50% 100%, rgba(var(--glow-3), 0.1) 0px, transparent 50%);
+    background-attachment: fixed;
+}
+
+.glass-card {
+    @apply backdrop-blur-2xl border border-white/40 dark:border-white/10 transition-all duration-500 rounded-5xl;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.dark .glass-card {
+    background: rgba(17, 24, 39, 0.6);
+    box-shadow: none;
+}
+
+.glass-card:hover {
+    @apply -translate-y-1 border-white/60 dark:border-white/20;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+}
+
+/* Spiritual Glow Effects */
+.divine-glow {
+    position: relative;
+}
+
+.divine-glow::after {
+    content: '';
+    position: absolute;
+    inset: -2px;
+    background: linear-gradient(45deg, #8A4FFF, #FF9933, #14B8A6);
+    filter: blur(15px);
+    opacity: 0.3;
+    z-index: -1;
+    border-radius: inherit;
+    @apply transition-opacity duration-500;
+}
+
+.divine-glow:hover::after {
+    opacity: 0.6;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    @apply bg-transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(transparent, rgba(var(--glow-1), 0.3), transparent);
+    @apply rounded-full border-4 border-transparent bg-clip-content;
+}
+
+/* Premium Selection */
+::selection {
+    @apply bg-primary/30 text-primary dark:text-primary-light;
+}

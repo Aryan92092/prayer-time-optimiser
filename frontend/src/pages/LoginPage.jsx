@@ -1,23 +1,35 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { motion } from 'framer-motion';
-import { Heart } from 'lucide-react';
+import { Heart, Loader2 } from 'lucide-react';
 
 const LoginPage = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
-    const { login } = useAuth();
+    const [submitting, setSubmitting] = useState(false);
+    const { login, user, loading } = useAuth();
     const navigate = useNavigate();
+
+    // If already logged in, go straight to dashboard
+    useEffect(() => {
+        if (!loading && user) {
+            navigate('/dashboard', { replace: true });
+        }
+    }, [user, loading, navigate]);
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+        setError('');
+        setSubmitting(true);
         try {
             await login(email, password);
-            navigate('/dashboard');
+            navigate('/dashboard', { replace: true });
         } catch (err) {
             setError(err.message || 'Login failed');
+        } finally {
+            setSubmitting(false);
         }
     };
 
@@ -72,9 +84,12 @@ const LoginPage = () => {
 
                     <button
                         type="submit"
-                        className="w-full bg-gradient-to-r from-primary to-purple-divine text-white py-5 rounded-2xl font-black text-lg hover:shadow-2xl hover:shadow-primary/30 transition-all transform hover:-translate-y-1 active:scale-95"
+                        disabled={submitting}
+                        className="w-full bg-gradient-to-r from-primary to-purple-divine text-white py-5 rounded-2xl font-black text-lg hover:shadow-2xl hover:shadow-primary/30 transition-all transform hover:-translate-y-1 active:scale-95 disabled:opacity-70 disabled:cursor-not-allowed flex items-center justify-center gap-3"
                     >
-                        Re-Enter Sanctuary
+                        {submitting ? (
+                            <><Loader2 size={20} className="animate-spin" /> Signing In...</>
+                        ) : 'Re-Enter Sanctuary'}
                     </button>
                 </form>
 

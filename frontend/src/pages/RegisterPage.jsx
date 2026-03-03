@@ -1,22 +1,34 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { motion } from 'framer-motion';
-import { Heart } from 'lucide-react';
+import { Heart, Loader2 } from 'lucide-react';
 
 const RegisterPage = () => {
     const [formData, setFormData] = useState({ name: '', email: '', password: '' });
     const [error, setError] = useState('');
-    const { register } = useAuth();
+    const [submitting, setSubmitting] = useState(false);
+    const { register, user, loading } = useAuth();
     const navigate = useNavigate();
+
+    // If already logged in, go straight to dashboard
+    useEffect(() => {
+        if (!loading && user) {
+            navigate('/dashboard', { replace: true });
+        }
+    }, [user, loading, navigate]);
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+        setError('');
+        setSubmitting(true);
         try {
             await register(formData);
-            navigate('/onboarding');
+            navigate('/dashboard', { replace: true });
         } catch (err) {
             setError(err.message || 'Registration failed');
+        } finally {
+            setSubmitting(false);
         }
     };
 
@@ -82,9 +94,12 @@ const RegisterPage = () => {
 
                     <button
                         type="submit"
-                        className="w-full bg-gradient-to-r from-primary to-purple-divine text-white py-5 rounded-2xl font-black text-lg hover:shadow-2xl hover:shadow-primary/30 transition-all transform hover:-translate-y-1 active:scale-95 mt-4"
+                        disabled={submitting}
+                        className="w-full bg-gradient-to-r from-primary to-purple-divine text-white py-5 rounded-2xl font-black text-lg hover:shadow-2xl hover:shadow-primary/30 transition-all transform hover:-translate-y-1 active:scale-95 mt-4 disabled:opacity-70 disabled:cursor-not-allowed flex items-center justify-center gap-3"
                     >
-                        Create Your Sanctuary
+                        {submitting ? (
+                            <><Loader2 size={20} className="animate-spin" /> Creating Account...</>
+                        ) : 'Create Your Sanctuary'}
                     </button>
                 </form>
 

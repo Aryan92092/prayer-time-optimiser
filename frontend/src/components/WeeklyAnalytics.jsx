@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Cell } from 'recharts';
 import { Zap } from 'lucide-react';
 
@@ -5,15 +6,24 @@ const WeeklyAnalytics = ({ data }) => {
     if (!data || data.length === 0) return null;
 
     return (
-        <div className="glass-card p-10">
+        <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ type: 'spring', stiffness: 220, damping: 22, delay: 0.1 }}
+            className="glass-card p-10"
+        >
             <div className="flex items-center justify-between mb-10">
                 <div>
                     <h3 className="text-3xl font-black tracking-tight dark:text-white">Momentum</h3>
                     <p className="text-slate-500 dark:text-slate-400 font-medium">Your journey over the last 7 days</p>
                 </div>
-                <div className="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center">
+                <motion.div
+                    whileHover={{ rotate: 15, scale: 1.1 }}
+                    transition={{ type: 'spring', stiffness: 300 }}
+                    className="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center"
+                >
                     <Zap className="text-primary" size={24} />
-                </div>
+                </motion.div>
             </div>
 
             <div className="h-[320px] w-full">
@@ -30,10 +40,16 @@ const WeeklyAnalytics = ({ data }) => {
                         <YAxis axisLine={false} tickLine={false} tick={{ fill: '#94a3b8', fontSize: 12, fontWeight: 700 }} />
                         <Tooltip
                             cursor={{ fill: 'rgba(138, 79, 255, 0.05)', radius: [10, 10, 0, 0] }}
+                            animationEasing="ease-out"
+                            animationDuration={200}
                             content={({ active, payload }) => {
                                 if (active && payload && payload.length) {
                                     return (
-                                        <div className="bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl p-5 shadow-2xl rounded-3xl border border-white/40 dark:border-white/10">
+                                        <motion.div
+                                            initial={{ opacity: 0, y: 6, scale: 0.96 }}
+                                            animate={{ opacity: 1, y: 0, scale: 1 }}
+                                            className="bg-white/90 dark:bg-slate-900/90 backdrop-blur-xl p-5 shadow-2xl rounded-3xl border border-white/40 dark:border-white/10"
+                                        >
                                             <p className="font-black text-slate-900 dark:text-white mb-1 uppercase tracking-wider text-xs">{payload[0].payload.day}</p>
                                             <div className="flex items-center gap-2">
                                                 <div className="w-2 h-2 rounded-full bg-primary" />
@@ -42,7 +58,7 @@ const WeeklyAnalytics = ({ data }) => {
                                             <p className="text-xs text-slate-500 dark:text-slate-400 font-bold mt-1">
                                                 {payload[0].payload.completed} of {payload[0].payload.total} activities
                                             </p>
-                                        </div>
+                                        </motion.div>
                                     );
                                 }
                                 return null;
@@ -52,20 +68,22 @@ const WeeklyAnalytics = ({ data }) => {
                             dataKey="percentage"
                             radius={[12, 12, 0, 0]}
                             barSize={40}
-                            animationDuration={2000}
+                            animationBegin={300}
+                            animationDuration={1200}
+                            animationEasing="ease-out"
                         >
                             {data.map((entry, index) => (
                                 <Cell
                                     key={`cell-${index}`}
                                     fill={entry.percentage === 100 ? '#14B8A6' : '#8A4FFF'}
-                                    fillOpacity={0.8}
+                                    fillOpacity={0.85}
                                 />
                             ))}
                         </Bar>
                     </BarChart>
                 </ResponsiveContainer>
             </div>
-        </div>
+        </motion.div>
     );
 };
 

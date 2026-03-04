@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useCallback } from 'react';
+﻿import React, { useEffect, useState, useCallback } from 'react';
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence, useMotionValue, useSpring, useTransform } from 'framer-motion';
 import { CheckCircle2, Circle, Calendar, BookOpen, TrendingUp, Heart } from 'lucide-react';
@@ -6,12 +6,13 @@ import { useAuth } from '../context/AuthContext';
 import WeeklyAnalytics from '../components/WeeklyAnalytics';
 import AchievementBadges from '../components/AchievementBadges';
 import TodayFocusCard from '../components/TodayFocusCard';
+import AIGuidanceCard from '../components/AIGuidanceCard';
 import { getActiveProgram, getProgramWithEntries, updateEntry, subscribeEntries } from '../services/programService';
 import { getJournals, subscribeJournals } from '../services/journalService';
 import { getAchievements, checkAndAwardAchievements, subscribeAchievements } from '../services/achievementService';
 import { computeInsights, computeWeeklyProgress, getTodayFocus } from '../services/scheduleService';
 
-// ─── Animation variants ──────────────────────────────────────────────────────
+// â”€â”€â”€ Animation variants â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const pageVariants = {
     hidden: {},
     show: { transition: { staggerChildren: 0.10, delayChildren: 0.05 } },
@@ -27,7 +28,7 @@ const fadeIn = {
     show: { opacity: 1, transition: { duration: 0.5 } },
 };
 
-// ─── Animated number counter ─────────────────────────────────────────────────
+// â”€â”€â”€ Animated number counter â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const AnimatedNumber = ({ value, suffix = '' }) => {
     const isNum = !isNaN(Number(value));
     const motionVal = useMotionValue(0);
@@ -42,7 +43,7 @@ const AnimatedNumber = ({ value, suffix = '' }) => {
     return <motion.span>{display}</motion.span>;
 };
 
-// ─── Skeleton card ───────────────────────────────────────────────────────────
+// â”€â”€â”€ Skeleton card â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const Skeleton = ({ className = '' }) => (
     <div className={`animate-pulse bg-slate-200 dark:bg-slate-800 rounded-2xl ${className}`} />
 );
@@ -66,7 +67,7 @@ const DashboardSkeleton = () => (
     </motion.div>
 );
 
-// ─── Main Component ───────────────────────────────────────────────────────────
+// â”€â”€â”€ Main Component â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const DashboardPage = () => {
     const { user } = useAuth();
 
@@ -181,7 +182,7 @@ const DashboardPage = () => {
             animate="show"
             className="max-w-7xl mx-auto space-y-12 pb-32 pt-20"
         >
-            {/* ── Header ── */}
+            {/* â”€â”€ Header â”€â”€ */}
             <motion.div variants={fadeUp} className="flex flex-col md:flex-row md:items-end justify-between gap-6 px-4">
                 <div>
                     <h1 className="text-5xl font-black tracking-tight text-slate-900 dark:text-white mb-2">
@@ -197,17 +198,17 @@ const DashboardPage = () => {
                 >
                     <span className="w-2 h-2 bg-teal-aurora rounded-full animate-pulse" />
                     <span className="text-xs font-black uppercase tracking-widest text-slate-600 dark:text-slate-300">
-                        {program.duration_type} Path • Day 1
+                        {program.duration_type} Path â€¢ Day 1
                     </span>
                 </motion.div>
             </motion.div>
 
-            {/* ── Today's Focus ── */}
+            {/* â”€â”€ Today's Focus â”€â”€ */}
             <motion.div variants={fadeUp}>
                 <TodayFocusCard task={todayFocus} onToggle={toggleComplete} />
             </motion.div>
 
-            {/* ── Stat Cards ── */}
+            {/* â”€â”€ Stat Cards â”€â”€ */}
             <motion.div variants={fadeUp} className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <StatCard
                     icon={<TrendingUp className="text-purple-divine" />}
@@ -235,7 +236,7 @@ const DashboardPage = () => {
                 />
             </motion.div>
 
-            {/* ── Analytics + Insights ── */}
+            {/* â”€â”€ Analytics + Insights â”€â”€ */}
             <motion.div variants={fadeUp} className="grid grid-cols-1 lg:grid-cols-3 gap-12">
                 {/* Left */}
                 <div className="lg:col-span-2 space-y-12">
@@ -312,7 +313,7 @@ const DashboardPage = () => {
                 </div>
             </motion.div>
 
-            {/* ── Full Schedule ── */}
+            {/* â”€â”€ Full Schedule â”€â”€ */}
             <motion.div variants={fadeUp} className="glass-card p-10 md:p-14">
                 <div className="flex items-center gap-4 mb-14">
                     <div className="w-14 h-14 bg-saffron/10 rounded-2xl flex items-center justify-center">
@@ -342,7 +343,7 @@ const DashboardPage = () => {
     );
 };
 
-// ─── Entry Row ────────────────────────────────────────────────────────────────
+// â”€â”€â”€ Entry Row â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const EntryRow = ({ entry, idx, toggling, onToggle }) => (
     <motion.div
         layout
@@ -434,7 +435,7 @@ const EntryRow = ({ entry, idx, toggling, onToggle }) => (
     </motion.div>
 );
 
-// ─── Stat Card ────────────────────────────────────────────────────────────────
+// â”€â”€â”€ Stat Card â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const StatCard = ({ icon, label, value, sub, theme, index }) => {
     const themes = {
         purple: 'bg-purple-divine/10 text-purple-divine shadow-purple-divine/5',
@@ -470,3 +471,5 @@ const StatCard = ({ icon, label, value, sub, theme, index }) => {
 };
 
 export default DashboardPage;
+
+

@@ -208,6 +208,11 @@ const DashboardPage = () => {
                 <TodayFocusCard task={todayFocus} onToggle={toggleComplete} />
             </motion.div>
 
+            {/* ── AI Spiritual Guidance ── */}
+            <motion.div variants={fadeUp}>
+                <AIGuidanceCard />
+            </motion.div>
+
             {/* â”€â”€ Stat Cards â”€â”€ */}
             <motion.div variants={fadeUp} className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <StatCard
@@ -352,8 +357,8 @@ const EntryRow = ({ entry, idx, toggling, onToggle }) => (
         exit={{ opacity: 0, scale: 0.97 }}
         transition={{ delay: idx * 0.025, type: 'spring', stiffness: 260, damping: 24 }}
         className={`p-8 rounded-[2.5rem] border-2 transition-colors duration-300 flex flex-col md:flex-row items-center md:items-start gap-8 ${entry.completed
-                ? 'bg-slate-50/50 dark:bg-slate-900/40 border-transparent'
-                : 'bg-white dark:bg-slate-900/40 border-slate-100 dark:border-slate-800 shadow-[0_10px_40px_-15px_rgba(0,0,0,0.05)] hover:shadow-[0_20px_60px_-15px_rgba(0,0,0,0.1)] hover:border-primary/20 dark:hover:border-primary/30 group'
+            ? 'bg-slate-50/50 dark:bg-slate-900/40 border-transparent'
+            : 'bg-white dark:bg-slate-900/40 border-slate-100 dark:border-slate-800 shadow-[0_10px_40px_-15px_rgba(0,0,0,0.05)] hover:shadow-[0_20px_60px_-15px_rgba(0,0,0,0.1)] hover:border-primary/20 dark:hover:border-primary/30 group'
             }`}
     >
         {/* Toggle button */}

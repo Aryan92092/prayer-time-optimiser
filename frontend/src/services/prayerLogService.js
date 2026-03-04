@@ -48,4 +48,23 @@ export const summarizePrayerLogs = (logs) => {
     return summary;
 };
 
+export const seedSampleLogs = async (userId) => {
+    const logs = [
+        { prayer_name: 'Fajr', status: 'missed', daysAgo: 6 },
+        { prayer_name: 'Fajr', status: 'missed', daysAgo: 5 },
+        { prayer_name: 'Fajr', status: 'missed', daysAgo: 4 },
+        { prayer_name: 'Dhuhr', status: 'completed', daysAgo: 3 },
+        { prayer_name: 'Dhuhr', status: 'completed', daysAgo: 2 },
+        { prayer_name: 'Asr', status: 'completed', daysAgo: 1 },
+        { prayer_name: 'Maghrib', status: 'completed', daysAgo: 0 },
+        { prayer_name: 'Isha', status: 'completed', daysAgo: 0 },
+    ];
+
+    for (const log of logs) {
+        const d = new Date();
+        d.setDate(d.getDate() - log.daysAgo);
+        await upsertPrayerLog(userId, log.prayer_name, log.status, d.toISOString().split('T')[0]);
+    }
+};
+
 export { PRAYERS };

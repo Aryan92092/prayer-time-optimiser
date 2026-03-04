@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Sparkles, RefreshCw, AlertCircle, ChevronRight } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import { analyzePrayerBehavior, getRateLimitRemaining } from '../services/aiAnalyzerService';
+import { seedSampleLogs } from '../services/prayerLogService';
 
 const Shimmer = ({ className = '' }) => (
     <div className={`relative overflow-hidden bg-white/30 dark:bg-white/5 rounded-2xl ${className}`}>
@@ -45,6 +46,18 @@ const AIGuidanceCard = () => {
     const [state, setState] = useState('idle');
     const [result, setResult] = useState(null);
     const [cooldown, setCooldown] = useState(0);
+
+    const handleSeedData = async () => {
+        if (!user) return;
+        setState('loading');
+        try {
+            await seedSampleLogs(user.id);
+            await runAnalysis();
+        } catch (err) {
+            console.error('Failed to seed data:', err);
+            setState('error');
+        }
+    };
 
     const runAnalysis = useCallback(async () => {
         if (!user) return;
@@ -129,10 +142,16 @@ const AIGuidanceCard = () => {
                         <p className="text-slate-500 dark:text-slate-400 font-medium text-sm leading-relaxed max-w-xs mx-auto">
                             Not enough data yet. Continue logging prayers to receive AI insights.
                         </p>
-                        <motion.button whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }} onClick={runAnalysis}
-                            className="text-xs font-black uppercase tracking-widest text-primary hover:text-primary/80 transition-colors">
-                            Try again
-                        </motion.button>
+                        <div className="flex justify-center gap-4 mt-2">
+                            <motion.button whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }} onClick={runAnalysis}
+                                className="text-xs font-black uppercase tracking-widest text-primary hover:text-primary/80 transition-colors">
+                                Try again
+                            </motion.button>
+                            <motion.button whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }} onClick={handleSeedData}
+                                className="text-xs font-black uppercase tracking-widest text-saffron hover:text-saffron/80 transition-colors">
+                                Add Test Data
+                            </motion.button>
+                        </div>
                     </motion.div>
                 )}
                 {state === 'error' && (

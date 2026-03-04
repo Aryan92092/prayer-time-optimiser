@@ -1,4 +1,4 @@
-﻿import React, { useEffect, useState, useCallback } from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { BrainCircuit, RefreshCw, AlertCircle, Sparkles, Feather } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';

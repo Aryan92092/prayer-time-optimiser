@@ -1,4 +1,4 @@
-﻿import React, { useEffect, useState, useCallback } from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Sparkles, RefreshCw, AlertCircle, ChevronRight } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
@@ -41,7 +41,7 @@ const SuggestionItem = ({ text, index }) => (
     </motion.li>
 );
 
-const AIGuidanceCard = () => {
+const AIGuidanceCard = () => { console.log("AIGuidanceCard mounting!"); 
     const { user } = useAuth();
     const [state, setState] = useState('idle');
     const [result, setResult] = useState(null);
@@ -185,3 +185,4 @@ const AIGuidanceCard = () => {
 };
 
 export default AIGuidanceCard;
+

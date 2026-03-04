@@ -7,6 +7,7 @@ import WeeklyAnalytics from '../components/WeeklyAnalytics';
 import AchievementBadges from '../components/AchievementBadges';
 import TodayFocusCard from '../components/TodayFocusCard';
 import AIGuidanceCard from '../components/AIGuidanceCard';
+import AIJourneyInsightCard from '../components/AIJourneyInsightCard';
 import { getActiveProgram, getProgramWithEntries, updateEntry, subscribeEntries } from '../services/programService';
 import { getJournals, subscribeJournals } from '../services/journalService';
 import { getAchievements, checkAndAwardAchievements, subscribeAchievements } from '../services/achievementService';
@@ -211,6 +212,12 @@ const DashboardPage = () => {
             {/* ── AI Spiritual Guidance ── */}
             <motion.div variants={fadeUp}>
                 <AIGuidanceCard />
+            </motion.div>
+
+
+            {/* ── AI Emotional Insight ── */}
+            <motion.div variants={fadeUp}>
+                <AIJourneyInsightCard />
             </motion.div>
 
             {/* â”€â”€ Stat Cards â”€â”€ */}
@@ -476,5 +483,7 @@ const StatCard = ({ icon, label, value, sub, theme, index }) => {
 };
 
 export default DashboardPage;
+
+
 
 

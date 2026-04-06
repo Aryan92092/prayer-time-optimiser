@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Send, History, Calendar, BookOpen } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
-import { createJournal, subscribeJournals } from '../services/journalService';
+import { createJournal, getJournals, subscribeJournals } from '../services/journalService';
 import { getActiveProgram } from '../services/programService';
 
 const JournalPage = () => {
@@ -20,6 +20,9 @@ const JournalPage = () => {
             if (prog) setActiveProgramId(prog.id);
         });
 
+        // Initial fetch on mount
+        getJournals(user.id).then(setJournals).catch(console.error);
+
         // Real-time subscription — updates automatically when journal added
         const unsub = subscribeJournals(user.id, setJournals);
         return unsub;
@@ -29,11 +32,18 @@ const JournalPage = () => {
         e.preventDefault();
         if (!text.trim()) return;
         setLoading(true);
+        const draft = text;
+        setText(''); // clear immediately for UX
         try {
-            await createJournal(user.id, activeProgramId, text);
-            setText(''); // real-time subscription handles the list update
+            const saved = await createJournal(user.id, activeProgramId, draft);
+            // Optimistically prepend to list (real-time subscription may also fire)
+            setJournals(prev => {
+                const alreadyExists = prev.some(j => j.id === saved.id);
+                return alreadyExists ? prev : [saved, ...prev];
+            });
         } catch (err) {
-            console.error(err);
+            console.error('Journal save error:', err);
+            setText(draft); // restore text if failed
         } finally {
             setLoading(false);
         }

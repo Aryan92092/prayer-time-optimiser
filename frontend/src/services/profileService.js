@@ -1,34 +1,24 @@
-import { supabase } from '../lib/supabase';
+import api from '../lib/api';
 
 /** Save or replace user's spiritual profile */
-export const setupProfile = async (userId, data) => {
-    // Upsert (insert or update) based on user_id
-    const { error } = await supabase
-        .from('user_profiles')
-        .upsert({ user_id: userId, ...data }, { onConflict: 'user_id' });
-    if (error) throw error;
+export const setupProfile = async (_userId, data) => {
+    const res = await api.put('/profile/spiritual', data);
+    return res.data;
 };
 
-/** Get profile once */
-export const getProfile = async (userId) => {
-    const { data, error } = await supabase
-        .from('user_profiles')
-        .select('*')
-        .eq('user_id', userId)
-        .single();
-    if (error && error.code !== 'PGRST116') throw error; // PGRST116 = no rows
+/** Get full profile (includes spiritual preferences) */
+export const getProfile = async (_userId) => {
+    const { data } = await api.get('/profile');
     return data;
 };
 
-/** Subscribe to profile changes in real-time */
-export const subscribeProfile = (userId, callback) => {
-    const channel = supabase
-        .channel(`profile:${userId}`)
-        .on(
-            'postgres_changes',
-            { event: '*', schema: 'public', table: 'user_profiles', filter: `user_id=eq.${userId}` },
-            () => getProfile(userId).then(callback)
-        )
-        .subscribe();
-    return () => supabase.removeChannel(channel);
+/** No-op: was real-time Supabase subscription — now replaced by manual refresh */
+export const subscribeProfile = (_userId, _callback) => {
+    return () => { };
+};
+
+/** Update display name / role */
+export const updateProfile = async (updates) => {
+    const { data } = await api.put('/profile', updates);
+    return data;
 };

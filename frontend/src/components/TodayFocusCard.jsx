@@ -1,8 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, CheckCircle2 } from 'lucide-react';
+import { CheckCircle2 } from 'lucide-react';
 
-const TodayFocusCard = ({ task, onToggle }) => {
+const TodayFocusCard = ({ task, onToggle, onFocusNow }) => {
     if (!task) return null;
 
     const isMotivational = task.allCompleted || task.message;
@@ -31,36 +31,34 @@ const TodayFocusCard = ({ task, onToggle }) => {
                     )}
                 </div>
 
-                {!isMotivational && (
-                    <button
-                        onClick={() => onToggle(task.id, false)}
-                        className="group bg-white text-slate-900 px-10 py-5 rounded-2xl font-black flex items-center gap-3 hover:scale-105 active:scale-95 transition-all shadow-xl hover:shadow-primary/30 text-lg"
-                    >
-                        Mark Completed
-                        <ArrowRight size={22} className="group-hover:translate-x-1 transition-transform" />
-                    </button>
+                {!isMotivational && !task.isLocked && (
+                    <div className="flex flex-col sm:flex-row shadow-xl rounded-2xl overflow-hidden shrink-0 mt-6 md:mt-0">
+                        <button
+                            onClick={() => onFocusNow && onFocusNow(task)}
+                            className="group bg-white text-primary px-8 py-5 font-black flex items-center justify-center gap-2 hover:bg-slate-50 transition-all text-lg border-b sm:border-b-0 sm:border-r border-slate-100"
+                        >
+                            Focus Now
+                        </button>
+                        <button
+                            onClick={() => onToggle(task.id, false)}
+                            className="group bg-white/95 text-slate-900 px-8 py-5 font-black flex items-center justify-center gap-3 hover:bg-white transition-all text-lg flex-1"
+                        >
+                            Mark Done
+                            <CheckCircle2 size={24} className="text-emerald-500 group-hover:scale-110 transition-transform" />
+                        </button>
+                    </div>
                 )}
 
-                {isMotivational && task.allCompleted && (
-                    <motion.div
-                        initial={{ scale: 0.9, opacity: 0 }}
-                        animate={{ scale: 1, opacity: 1 }}
-                        className="flex items-center gap-4 bg-white/10 backdrop-blur-xl p-6 rounded-3xl border border-white/20"
-                    >
-                        <div className="w-12 h-12 bg-teal-aurora rounded-2xl flex items-center justify-center shadow-lg">
-                            <CheckCircle2 size={28} className="text-white" />
-                        </div>
-                        <div className="text-left">
-                            <p className="font-black text-xl leading-none">Complete!</p>
-                            <p className="text-white/70 text-sm font-medium">Your spirit shines bright today.</p>
-                        </div>
-                    </motion.div>
+                {task.isLocked && (
+                    <div className="bg-amber-500/20 text-white px-6 py-4 rounded-xl font-bold flex items-center gap-2 mt-6 md:mt-0 shadow-inner backdrop-blur-sm border border-amber-400/30">
+                        Complete previous tasks to unlock
+                    </div>
                 )}
             </div>
 
-            {/* Premium Decorative elements */}
-            <div className="absolute top-[-40%] right-[-10%] w-96 h-96 bg-white/10 rounded-full blur-[100px] animate-pulse"></div>
-            <div className="absolute bottom-[-20%] left-[-5%] w-64 h-64 bg-saffron/10 rounded-full blur-[80px]"></div>
+            {/* Decorative glows */}
+            <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -mr-32 -mt-32 pointer-events-none" />
+            <div className="absolute bottom-0 left-0 w-64 h-64 bg-gold-divine/20 rounded-full blur-3xl -ml-32 -mb-32 pointer-events-none" />
         </motion.div>
     );
 };

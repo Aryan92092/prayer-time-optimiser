@@ -30,6 +30,7 @@ const Navbar = ({ theme, toggleTheme }) => {
                             <div className="hidden md:flex items-center gap-8">
                                 <NavLink to="/dashboard" label="Dashboard" />
                                 <NavLink to="/journal" label="Journal" />
+                                <NavLink to="/healing" label="Healing" />
                                 <NavLink to="/profile" label="Profile" />
                             </div>
 

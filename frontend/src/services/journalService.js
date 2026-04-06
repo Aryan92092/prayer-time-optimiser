@@ -1,36 +1,27 @@
-import { supabase } from '../lib/supabase';
+import api from '../lib/api';
 
 /** Create a journal entry */
-export const createJournal = async (userId, programId, entryText) => {
-    const { data, error } = await supabase
-        .from('journals')
-        .insert({ user_id: userId, program_id: programId || null, entry_text: entryText })
-        .select()
-        .single();
-    if (error) throw error;
+export const createJournal = async (_userId, programId, entryText) => {
+    const { data } = await api.post('/journals', {
+        entry_text: entryText,
+        program_id: programId || null,
+    });
     return data;
 };
 
-/** Fetch journals once */
-export const getJournals = async (userId) => {
-    const { data, error } = await supabase
-        .from('journals')
-        .select('*')
-        .eq('user_id', userId)
-        .order('created_at', { ascending: false });
-    if (error) throw error;
+/** Fetch all journals for the logged-in user */
+export const getJournals = async (_userId) => {
+    const { data } = await api.get('/journals');
     return data || [];
 };
 
-/** Real-time subscription to journals */
-export const subscribeJournals = (userId, callback) => {
-    const channel = supabase
-        .channel(`journals:${userId}`)
-        .on(
-            'postgres_changes',
-            { event: '*', schema: 'public', table: 'journals', filter: `user_id=eq.${userId}` },
-            () => getJournals(userId).then(callback)
-        )
-        .subscribe();
-    return () => supabase.removeChannel(channel);
+/** Delete a journal entry */
+export const deleteJournal = async (id) => {
+    const { data } = await api.delete(`/journals/${id}`);
+    return data;
+};
+
+/** No-op: real-time subscriptions replaced with polling or manual refresh */
+export const subscribeJournals = (_userId, _callback) => {
+    return () => { }; // returns unsubscribe noop
 };

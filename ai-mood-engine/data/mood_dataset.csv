@@ -1,0 +1,2001 @@
+mood,sleep_hours,stress_level,tasks_completed,spiritual_level,recommendation
+overwhelmed,5,4,5,2,take a short nap
+motivated,8,2,10,5,start a challenging task
+stressed,4,4,4,2,take a short nap
+sad,3,4,3,1,self compassion break
+stressed,7,3,7,2,digital detox
+stressed,4,5,5,3,take a short nap
+sad,5,2,1,2,gratitude practice
+anxious,5,5,4,2,take a short nap
+happy,6,3,9,4,start a challenging task
+stressed,4,5,2,3,take a short nap
+happy,6,3,5,5,start a challenging task
+stressed,4,3,2,3,take a short nap
+tired,3,2,3,4,take a short nap
+calm,9,1,8,3,deep work session
+motivated,8,4,8,5,start a challenging task
+motivated,9,2,7,5,start a challenging task
+calm,9,1,6,4,creative activity
+happy,7,3,5,5,deep work session
+anxious,3,4,3,3,take a short nap
+overwhelmed,6,4,3,1,breathing exercise
+calm,6,3,7,5,mindful meditation
+anxious,9,4,4,2,breathing exercise
+overwhelmed,3,4,7,1,take a short nap
+tired,5,3,2,1,take a short nap
+overwhelmed,4,4,5,1,take a short nap
+happy,9,3,5,4,deep work session
+tired,3,2,4,3,take a short nap
+sad,3,5,4,1,self compassion break
+sad,5,2,0,2,gratitude practice
+happy,8,3,9,5,start a challenging task
+calm,6,2,8,5,mindful meditation
+sad,7,4,1,1,self compassion break
+calm,8,1,4,4,creative activity
+sad,3,3,3,1,gratitude practice
+tired,5,2,3,4,take a short nap
+motivated,8,2,10,3,start a challenging task
+anxious,4,5,0,2,take a short nap
+stressed,7,3,6,1,mindful meditation
+tired,5,3,1,2,take a short nap
+motivated,8,2,10,5,start a challenging task
+happy,6,1,6,3,start a challenging task
+overwhelmed,6,4,7,2,digital detox
+motivated,9,2,6,4,deep work session
+calm,6,2,5,4,mindful meditation
+anxious,6,4,3,1,breathing exercise
+sad,5,4,0,1,self compassion break
+calm,9,1,3,2,mindful meditation
+sad,5,5,3,2,self compassion break
+happy,8,1,5,4,deep work session
+anxious,3,4,2,2,take a short nap
+anxious,6,5,1,3,breathing exercise
+happy,9,4,5,5,deep work session
+stressed,3,3,2,3,take a short nap
+happy,8,3,8,5,start a challenging task
+sad,5,2,1,2,gratitude practice
+anxious,4,4,2,2,take a short nap
+tired,5,3,4,3,take a short nap
+anxious,5,5,1,1,take a short nap
+tired,3,2,0,4,take a short nap
+motivated,7,3,8,4,start a challenging task
+stressed,5,4,3,1,take a short nap
+calm,3,3,5,3,mindful meditation
+anxious,4,3,4,3,breathing exercise
+tired,5,1,1,3,take a short nap
+overwhelmed,4,5,3,1,take a short nap
+overwhelmed,4,5,4,1,take a short nap
+sad,7,5,3,1,self compassion break
+anxious,6,5,0,1,gratitude practice
+happy,7,3,6,3,start a challenging task
+stressed,4,4,6,2,take a short nap
+stressed,7,4,2,3,breathing exercise
+motivated,8,3,7,5,start a challenging task
+stressed,6,3,6,3,breathing exercise
+tired,3,2,4,1,take a short nap
+sad,7,4,2,3,self compassion break
+motivated,7,2,9,5,start a challenging task
+anxious,4,5,4,3,take a short nap
+sad,3,2,0,2,gratitude practice
+motivated,6,3,10,4,start a challenging task
+overwhelmed,3,5,8,2,take a short nap
+happy,9,2,5,3,start a challenging task
+sad,4,4,2,2,self compassion break
+stressed,6,4,6,3,breathing exercise
+anxious,6,4,0,3,breathing exercise
+anxious,4,4,2,2,take a short nap
+stressed,4,3,4,2,take a short nap
+overwhelmed,5,4,7,1,take a short nap
+motivated,7,3,9,5,start a challenging task
+motivated,7,3,10,5,start a challenging task
+anxious,3,4,0,2,take a short nap
+anxious,6,4,5,3,breathing exercise
+anxious,6,4,0,1,gratitude practice
+happy,8,3,5,4,deep work session
+motivated,9,2,10,5,start a challenging task
+overwhelmed,6,4,9,2,digital detox
+overwhelmed,4,4,9,2,take a short nap
+calm,7,3,6,4,mindful meditation
+tired,4,4,3,3,take a short nap
+anxious,5,5,4,1,take a short nap
+overwhelmed,4,4,4,2,take a short nap
+sad,6,5,1,1,self compassion break
+sad,6,5,1,1,self compassion break
+motivated,7,1,6,5,deep work session
+stressed,4,5,4,2,take a short nap
+happy,4,3,10,4,start a challenging task
+sad,4,3,1,1,gratitude practice
+calm,6,3,3,4,mindful meditation
+motivated,7,2,9,3,start a challenging task
+calm,3,5,8,3,mindful meditation
+calm,9,2,3,3,mindful meditation
+sad,7,5,1,2,self compassion break
+stressed,4,3,4,2,take a short nap
+tired,6,5,2,4,take a short nap
+overwhelmed,3,5,4,1,take a short nap
+sad,4,2,3,2,gratitude practice
+motivated,8,3,6,3,start a challenging task
+tired,6,4,5,2,take a short nap
+sad,5,3,4,2,gratitude practice
+motivated,8,1,6,4,deep work session
+anxious,4,4,4,2,take a short nap
+overwhelmed,6,4,9,2,digital detox
+tired,5,4,1,3,take a short nap
+tired,4,4,4,2,take a short nap
+motivated,8,1,8,4,start a challenging task
+motivated,8,1,7,4,start a challenging task
+anxious,3,4,4,3,take a short nap
+motivated,9,2,9,4,start a challenging task
+sad,7,3,4,3,write in journal
+tired,6,4,0,3,take a short nap
+motivated,6,2,7,5,start a challenging task
+overwhelmed,4,4,5,1,take a short nap
+overwhelmed,6,5,8,2,digital detox
+calm,7,2,5,5,creative activity
+calm,8,2,3,3,mindful meditation
+sad,5,4,3,3,self compassion break
+tired,3,2,3,1,take a short nap
+overwhelmed,3,4,8,1,take a short nap
+overwhelmed,3,4,6,1,take a short nap
+anxious,3,4,0,1,take a short nap
+anxious,6,5,5,3,breathing exercise
+stressed,3,2,7,3,take a short nap
+motivated,7,2,6,5,deep work session
+anxious,6,5,4,2,breathing exercise
+sad,7,5,3,1,self compassion break
+anxious,6,5,2,1,gratitude practice
+calm,9,2,7,5,deep work session
+calm,7,1,5,4,creative activity
+stressed,7,3,7,2,digital detox
+happy,6,2,8,3,start a challenging task
+happy,7,1,7,4,start a challenging task
+anxious,5,4,2,3,take a short nap
+sad,3,2,4,2,gratitude practice
+calm,8,3,3,4,mindful meditation
+tired,4,3,0,1,take a short nap
+motivated,8,2,9,3,start a challenging task
+happy,8,3,9,4,start a challenging task
+calm,7,3,8,3,mindful meditation
+anxious,5,4,3,3,take a short nap
+calm,8,3,3,5,mindful meditation
+anxious,4,4,4,3,take a short nap
+calm,9,1,4,5,creative activity
+sad,5,5,1,1,self compassion break
+happy,7,2,7,4,start a challenging task
+tired,3,3,3,2,take a short nap
+overwhelmed,5,4,6,2,take a short nap
+stressed,7,4,4,3,breathing exercise
+anxious,5,5,5,1,take a short nap
+tired,6,2,2,4,take a short nap
+happy,7,1,8,4,start a challenging task
+overwhelmed,4,5,9,2,take a short nap
+tired,6,4,2,4,take a short nap
+calm,9,3,5,3,mindful meditation
+overwhelmed,6,4,6,2,breathing exercise
+overwhelmed,8,1,4,1,breathing exercise
+motivated,6,3,9,4,start a challenging task
+stressed,5,3,4,2,take a short nap
+sad,6,3,2,2,gratitude practice
+stressed,5,5,7,1,take a short nap
+sad,4,3,3,3,write in journal
+anxious,5,4,1,2,take a short nap
+stressed,4,4,2,1,take a short nap
+sad,3,4,0,2,self compassion break
+overwhelmed,4,4,4,1,take a short nap
+tired,4,2,5,1,take a short nap
+sad,6,5,1,3,self compassion break
+calm,9,1,3,2,mindful meditation
+overwhelmed,3,4,7,1,take a short nap
+anxious,6,4,3,1,breathing exercise
+tired,3,4,3,4,take a short nap
+tired,3,3,3,4,take a short nap
+calm,7,3,5,3,mindful meditation
+motivated,6,1,10,3,start a challenging task
+stressed,4,3,4,2,take a short nap
+happy,7,3,5,5,deep work session
+happy,6,1,6,3,start a challenging task
+motivated,9,1,8,4,start a challenging task
+tired,4,2,5,2,take a short nap
+sad,7,2,4,1,gratitude practice
+calm,8,1,8,3,deep work session
+anxious,5,4,2,3,take a short nap
+overwhelmed,5,4,7,1,take a short nap
+calm,8,1,8,2,deep work session
+happy,6,2,7,5,start a challenging task
+calm,9,3,8,5,mindful meditation
+motivated,6,1,6,4,start a challenging task
+happy,8,1,10,4,start a challenging task
+stressed,6,5,3,2,mindful meditation
+stressed,4,5,7,1,take a short nap
+tired,6,3,3,1,take a short nap
+happy,9,3,5,4,deep work session
+overwhelmed,3,5,3,2,take a short nap
+happy,7,2,5,3,start a challenging task
+motivated,7,2,8,5,start a challenging task
+happy,7,2,6,5,deep work session
+calm,6,2,6,5,mindful meditation
+overwhelmed,4,5,5,1,take a short nap
+tired,9,4,0,3,take a short nap
+motivated,9,2,9,3,start a challenging task
+motivated,9,3,6,5,deep work session
+tired,5,2,2,4,take a short nap
+sad,3,2,4,1,gratitude practice
+happy,9,1,6,5,deep work session
+calm,9,2,4,2,mindful meditation
+tired,4,2,1,2,take a short nap
+overwhelmed,3,5,8,2,take a short nap
+overwhelmed,5,5,7,2,take a short nap
+motivated,9,2,7,4,start a challenging task
+happy,7,3,10,4,start a challenging task
+anxious,3,4,0,3,take a short nap
+motivated,7,4,8,4,start a challenging task
+overwhelmed,3,5,7,2,take a short nap
+happy,8,2,5,5,deep work session
+anxious,4,5,4,3,take a short nap
+stressed,7,4,7,2,digital detox
+overwhelmed,6,4,3,2,breathing exercise
+motivated,3,2,8,3,start a challenging task
+tired,3,4,1,1,take a short nap
+sad,4,5,2,2,self compassion break
+stressed,7,4,4,3,breathing exercise
+calm,6,3,8,5,mindful meditation
+calm,7,1,6,2,mindful meditation
+anxious,3,5,1,1,take a short nap
+calm,7,2,3,3,mindful meditation
+sad,5,4,3,2,self compassion break
+stressed,6,5,4,2,mindful meditation
+happy,7,2,6,4,deep work session
+sad,9,4,4,3,self compassion break
+overwhelmed,3,4,3,1,take a short nap
+sad,5,2,1,2,gratitude practice
+stressed,4,4,3,1,take a short nap
+tired,5,3,3,2,take a short nap
+motivated,9,2,8,5,start a challenging task
+tired,5,2,4,3,take a short nap
+motivated,8,3,9,5,start a challenging task
+stressed,6,3,2,3,breathing exercise
+tired,6,2,2,1,take a short nap
+calm,9,3,4,4,mindful meditation
+calm,7,3,6,4,mindful meditation
+overwhelmed,6,4,3,1,breathing exercise
+stressed,7,4,5,2,mindful meditation
+happy,6,1,10,4,start a challenging task
+overwhelmed,4,5,8,1,take a short nap
+happy,8,1,5,3,start a challenging task
+anxious,5,4,4,1,take a short nap
+tired,4,4,4,1,take a short nap
+anxious,5,5,2,3,take a short nap
+motivated,6,2,10,3,start a challenging task
+happy,6,1,6,5,start a challenging task
+happy,6,2,5,5,start a challenging task
+tired,5,4,0,1,take a short nap
+stressed,4,3,7,3,take a short nap
+overwhelmed,4,4,5,1,take a short nap
+motivated,7,3,7,3,start a challenging task
+anxious,5,4,2,2,take a short nap
+overwhelmed,3,5,4,1,take a short nap
+overwhelmed,4,4,5,1,take a short nap
+calm,8,2,4,5,creative activity
+motivated,7,1,10,3,start a challenging task
+stressed,5,4,6,2,take a short nap
+happy,7,3,7,5,start a challenging task
+overwhelmed,6,5,7,1,digital detox
+stressed,5,3,7,3,take a short nap
+calm,6,2,7,2,mindful meditation
+stressed,4,3,3,2,take a short nap
+stressed,7,4,3,1,mindful meditation
+happy,8,2,6,5,deep work session
+motivated,6,2,10,5,start a challenging task
+anxious,6,5,2,3,breathing exercise
+happy,6,2,9,5,start a challenging task
+happy,7,3,6,4,deep work session
+stressed,4,3,2,3,take a short nap
+anxious,5,5,0,3,take a short nap
+stressed,5,5,3,1,take a short nap
+anxious,5,5,2,1,take a short nap
+calm,6,1,6,2,mindful meditation
+motivated,7,3,9,3,start a challenging task
+happy,6,1,8,5,start a challenging task
+anxious,4,5,4,1,take a short nap
+overwhelmed,5,5,6,2,take a short nap
+motivated,8,3,9,3,start a challenging task
+calm,8,1,6,5,creative activity
+happy,6,2,9,4,start a challenging task
+overwhelmed,4,5,5,1,take a short nap
+stressed,4,3,6,3,take a short nap
+sad,5,3,0,1,gratitude practice
+overwhelmed,8,3,7,1,breathing exercise
+tired,8,1,3,1,light exercise
+stressed,5,3,4,2,take a short nap
+sad,4,2,1,3,social connection
+happy,8,1,9,5,start a challenging task
+tired,4,2,4,3,take a short nap
+anxious,5,4,0,3,take a short nap
+tired,3,4,2,1,take a short nap
+sad,6,4,2,1,self compassion break
+tired,6,3,2,3,take a short nap
+calm,8,3,3,2,mindful meditation
+anxious,5,5,3,3,take a short nap
+anxious,3,5,5,1,take a short nap
+overwhelmed,5,4,4,2,take a short nap
+anxious,4,5,5,3,take a short nap
+happy,9,3,5,5,deep work session
+anxious,4,5,4,1,take a short nap
+happy,7,3,6,3,start a challenging task
+motivated,8,3,10,3,start a challenging task
+sad,3,2,1,2,gratitude practice
+calm,9,2,8,3,deep work session
+overwhelmed,5,5,4,1,take a short nap
+calm,9,3,8,5,mindful meditation
+anxious,5,4,2,3,take a short nap
+sad,5,4,2,1,self compassion break
+motivated,6,2,8,4,start a challenging task
+calm,6,3,3,4,mindful meditation
+anxious,6,4,0,2,gratitude practice
+calm,7,2,8,3,deep work session
+motivated,7,3,9,5,start a challenging task
+anxious,5,5,4,2,take a short nap
+motivated,6,3,8,5,start a challenging task
+happy,7,1,8,3,start a challenging task
+tired,4,2,3,1,take a short nap
+overwhelmed,6,5,9,1,digital detox
+stressed,4,3,3,2,take a short nap
+motivated,8,3,6,5,deep work session
+overwhelmed,3,4,6,2,take a short nap
+sad,7,4,4,2,self compassion break
+calm,9,3,4,4,mindful meditation
+anxious,6,5,5,1,breathing exercise
+motivated,8,3,8,3,start a challenging task
+overwhelmed,5,4,8,2,take a short nap
+anxious,5,4,0,2,take a short nap
+sad,4,5,3,1,self compassion break
+happy,9,1,8,4,start a challenging task
+motivated,7,2,6,5,deep work session
+stressed,4,5,3,3,take a short nap
+anxious,4,4,5,3,take a short nap
+happy,8,1,10,3,start a challenging task
+calm,8,2,5,3,mindful meditation
+overwhelmed,4,5,4,1,take a short nap
+anxious,5,4,2,1,take a short nap
+stressed,7,5,6,1,mindful meditation
+tired,5,3,1,1,take a short nap
+motivated,8,1,10,5,start a challenging task
+motivated,7,3,10,5,start a challenging task
+sad,3,4,3,3,self compassion break
+happy,7,2,5,4,deep work session
+calm,8,1,7,2,deep work session
+motivated,6,1,7,3,start a challenging task
+anxious,4,4,1,3,take a short nap
+motivated,8,1,9,4,start a challenging task
+tired,6,3,0,3,take a short nap
+motivated,9,3,10,5,start a challenging task
+anxious,3,5,0,3,take a short nap
+overwhelmed,5,5,3,1,take a short nap
+happy,7,2,7,5,start a challenging task
+anxious,5,5,5,2,take a short nap
+anxious,4,4,4,1,take a short nap
+anxious,3,4,5,3,take a short nap
+motivated,9,2,7,4,start a challenging task
+overwhelmed,6,4,5,1,breathing exercise
+overwhelmed,3,5,8,2,take a short nap
+stressed,8,5,5,1,mindful meditation
+stressed,4,5,6,1,take a short nap
+sad,5,5,1,1,self compassion break
+motivated,8,2,7,5,start a challenging task
+anxious,8,1,4,2,breathing exercise
+stressed,4,5,3,1,take a short nap
+sad,5,3,2,3,social connection
+calm,9,3,7,4,mindful meditation
+stressed,7,4,6,2,mindful meditation
+calm,7,2,7,5,deep work session
+anxious,6,4,4,3,breathing exercise
+overwhelmed,3,5,3,1,take a short nap
+anxious,3,5,0,2,take a short nap
+motivated,7,1,10,3,start a challenging task
+calm,6,2,7,4,mindful meditation
+calm,7,3,6,3,mindful meditation
+sad,7,2,3,2,gratitude practice
+stressed,4,3,2,2,take a short nap
+anxious,6,4,3,1,breathing exercise
+motivated,8,3,6,4,deep work session
+calm,5,4,6,3,mindful meditation
+sad,4,2,4,2,gratitude practice
+happy,6,2,5,5,start a challenging task
+sad,3,2,0,3,social connection
+calm,9,3,6,4,mindful meditation
+motivated,8,3,9,3,start a challenging task
+tired,5,4,5,1,take a short nap
+overwhelmed,3,4,9,2,take a short nap
+motivated,8,3,9,3,start a challenging task
+tired,4,3,3,2,take a short nap
+tired,5,3,5,2,take a short nap
+calm,7,1,4,2,mindful meditation
+calm,9,3,8,2,mindful meditation
+overwhelmed,4,4,4,2,take a short nap
+sad,3,2,3,2,gratitude practice
+happy,8,1,10,4,start a challenging task
+stressed,8,3,2,2,mindful meditation
+motivated,9,1,6,3,start a challenging task
+happy,6,2,7,4,start a challenging task
+happy,9,1,10,3,start a challenging task
+overwhelmed,4,4,7,1,take a short nap
+calm,6,1,8,4,mindful meditation
+motivated,8,4,8,3,start a challenging task
+stressed,4,4,5,1,take a short nap
+calm,8,1,8,5,deep work session
+stressed,6,3,4,2,mindful meditation
+overwhelmed,5,5,4,1,take a short nap
+stressed,7,4,5,1,mindful meditation
+tired,3,4,4,3,take a short nap
+tired,5,2,0,2,take a short nap
+stressed,6,4,7,3,digital detox
+motivated,8,3,6,4,deep work session
+anxious,6,5,1,1,gratitude practice
+stressed,6,4,7,2,digital detox
+calm,8,2,7,4,deep work session
+overwhelmed,5,4,4,2,take a short nap
+overwhelmed,5,5,5,1,take a short nap
+tired,6,4,4,2,take a short nap
+sad,5,3,4,3,write in journal
+motivated,9,1,8,5,start a challenging task
+anxious,3,4,5,3,take a short nap
+motivated,6,2,9,3,start a challenging task
+happy,8,3,9,4,start a challenging task
+stressed,6,3,4,3,breathing exercise
+calm,6,1,4,2,mindful meditation
+stressed,7,4,2,2,mindful meditation
+calm,9,3,3,4,mindful meditation
+sad,7,3,2,2,gratitude practice
+stressed,7,3,2,2,mindful meditation
+calm,7,3,3,2,mindful meditation
+stressed,7,2,3,2,mindful meditation
+happy,6,3,6,3,start a challenging task
+stressed,4,5,4,2,take a short nap
+happy,4,2,8,3,start a challenging task
+tired,3,4,3,1,take a short nap
+overwhelmed,3,4,5,2,take a short nap
+anxious,4,5,2,2,take a short nap
+motivated,8,2,6,4,deep work session
+overwhelmed,3,5,9,1,take a short nap
+anxious,5,4,1,3,take a short nap
+motivated,9,3,10,3,start a challenging task
+motivated,8,1,8,5,start a challenging task
+motivated,7,2,10,3,start a challenging task
+calm,7,1,5,5,creative activity
+tired,3,2,1,3,take a short nap
+motivated,9,1,10,4,start a challenging task
+motivated,9,2,7,4,start a challenging task
+happy,8,3,5,5,deep work session
+sad,3,2,1,2,gratitude practice
+happy,8,1,5,5,deep work session
+sad,4,4,3,2,self compassion break
+motivated,7,1,8,4,start a challenging task
+calm,8,2,6,4,creative activity
+sad,7,5,0,2,self compassion break
+stressed,7,3,7,3,digital detox
+anxious,9,1,5,3,breathing exercise
+motivated,6,2,9,5,start a challenging task
+calm,6,1,8,3,mindful meditation
+motivated,7,2,7,4,start a challenging task
+motivated,7,1,10,3,start a challenging task
+stressed,4,5,3,2,take a short nap
+overwhelmed,8,5,4,1,breathing exercise
+stressed,4,4,5,3,take a short nap
+motivated,8,2,6,3,start a challenging task
+motivated,9,1,7,3,start a challenging task
+stressed,4,5,7,2,take a short nap
+stressed,7,3,7,3,digital detox
+calm,9,1,5,5,creative activity
+motivated,9,3,8,3,start a challenging task
+sad,6,4,4,3,self compassion break
+motivated,7,3,10,3,start a challenging task
+anxious,5,5,4,3,take a short nap
+motivated,9,2,8,3,start a challenging task
+overwhelmed,4,5,3,2,take a short nap
+calm,8,2,3,4,creative activity
+sad,5,4,3,2,self compassion break
+sad,5,3,2,2,gratitude practice
+stressed,5,4,4,2,take a short nap
+motivated,9,3,10,4,start a challenging task
+anxious,6,5,5,2,breathing exercise
+calm,8,1,4,2,mindful meditation
+anxious,6,4,1,1,gratitude practice
+calm,8,1,5,3,mindful meditation
+sad,6,3,0,3,social connection
+stressed,7,5,3,2,mindful meditation
+anxious,5,4,3,1,take a short nap
+overwhelmed,3,5,8,1,take a short nap
+stressed,4,5,7,3,take a short nap
+happy,7,2,8,5,start a challenging task
+overwhelmed,3,5,3,1,take a short nap
+tired,6,4,2,4,take a short nap
+happy,9,2,9,5,start a challenging task
+motivated,9,3,10,5,start a challenging task
+calm,6,3,4,3,mindful meditation
+stressed,6,4,6,3,breathing exercise
+overwhelmed,3,5,4,2,take a short nap
+anxious,5,4,0,1,take a short nap
+sad,3,3,1,3,social connection
+motivated,8,3,10,3,start a challenging task
+anxious,6,5,5,3,breathing exercise
+tired,4,3,4,3,take a short nap
+anxious,6,5,3,2,breathing exercise
+motivated,6,2,10,5,start a challenging task
+anxious,3,5,0,2,take a short nap
+calm,7,2,5,2,mindful meditation
+calm,9,1,6,4,creative activity
+sad,5,2,2,3,social connection
+calm,9,1,5,3,mindful meditation
+motivated,6,3,10,5,start a challenging task
+sad,5,2,3,2,gratitude practice
+stressed,5,5,7,1,take a short nap
+tired,6,3,5,1,take a short nap
+overwhelmed,6,4,5,1,breathing exercise
+happy,7,1,8,4,start a challenging task
+calm,9,3,3,5,mindful meditation
+sad,7,2,2,1,gratitude practice
+overwhelmed,5,5,4,2,take a short nap
+anxious,4,4,1,2,take a short nap
+sad,5,4,4,3,self compassion break
+motivated,7,3,8,3,start a challenging task
+overwhelmed,5,5,5,2,take a short nap
+happy,7,1,8,4,start a challenging task
+tired,6,4,2,1,take a short nap
+tired,4,4,3,2,take a short nap
+tired,6,4,2,1,take a short nap
+stressed,9,3,6,2,mindful meditation
+sad,6,4,1,1,self compassion break
+calm,9,3,5,4,mindful meditation
+overwhelmed,5,4,7,2,take a short nap
+overwhelmed,4,4,7,2,take a short nap
+overwhelmed,5,5,7,2,take a short nap
+calm,7,2,3,4,creative activity
+happy,6,3,8,4,start a challenging task
+motivated,8,2,9,4,start a challenging task
+tired,6,2,3,1,take a short nap
+happy,9,1,10,5,start a challenging task
+tired,5,3,1,3,take a short nap
+anxious,3,5,0,1,take a short nap
+overwhelmed,3,5,3,1,take a short nap
+happy,7,3,7,5,start a challenging task
+anxious,7,5,5,1,breathing exercise
+motivated,9,3,7,4,start a challenging task
+overwhelmed,6,4,3,1,breathing exercise
+sad,7,2,4,2,gratitude practice
+sad,3,4,2,3,self compassion break
+calm,7,2,6,2,mindful meditation
+tired,4,2,2,2,take a short nap
+overwhelmed,6,4,5,1,breathing exercise
+sad,3,3,3,1,gratitude practice
+tired,6,4,3,3,take a short nap
+happy,7,2,5,3,start a challenging task
+stressed,4,4,6,1,take a short nap
+stressed,4,4,7,1,take a short nap
+stressed,6,4,3,3,breathing exercise
+stressed,4,5,3,2,take a short nap
+motivated,9,1,7,4,start a challenging task
+tired,4,3,2,2,take a short nap
+calm,8,3,5,2,mindful meditation
+tired,6,4,5,2,take a short nap
+overwhelmed,3,3,8,1,breathing exercise
+overwhelmed,6,5,6,2,breathing exercise
+stressed,6,3,2,2,mindful meditation
+overwhelmed,3,5,9,2,take a short nap
+stressed,4,4,2,3,take a short nap
+motivated,7,1,8,4,start a challenging task
+sad,4,3,2,1,gratitude practice
+motivated,9,3,9,3,start a challenging task
+stressed,6,4,4,3,breathing exercise
+anxious,6,4,3,1,breathing exercise
+motivated,8,1,10,3,start a challenging task
+happy,7,3,10,5,start a challenging task
+overwhelmed,6,5,7,1,digital detox
+calm,8,1,3,2,mindful meditation
+overwhelmed,5,4,7,2,take a short nap
+stressed,7,3,5,3,breathing exercise
+overwhelmed,4,5,8,2,take a short nap
+happy,6,3,9,5,start a challenging task
+anxious,6,5,4,1,breathing exercise
+overwhelmed,3,5,9,1,take a short nap
+sad,3,5,1,2,self compassion break
+sad,7,4,4,1,self compassion break
+sad,7,3,1,1,gratitude practice
+calm,9,2,4,3,mindful meditation
+calm,6,1,8,3,mindful meditation
+tired,3,3,0,2,take a short nap
+stressed,6,3,2,3,breathing exercise
+stressed,9,2,3,1,mindful meditation
+tired,6,4,0,3,take a short nap
+stressed,6,5,5,2,mindful meditation
+motivated,6,1,9,5,start a challenging task
+anxious,5,5,5,2,take a short nap
+tired,6,4,0,3,take a short nap
+calm,9,1,6,3,mindful meditation
+sad,6,4,2,3,self compassion break
+stressed,6,3,6,3,breathing exercise
+anxious,6,4,0,3,breathing exercise
+anxious,6,5,3,1,breathing exercise
+tired,4,2,4,2,take a short nap
+tired,3,2,4,1,take a short nap
+sad,3,3,0,2,gratitude practice
+sad,6,5,2,3,self compassion break
+anxious,3,5,2,1,take a short nap
+tired,5,3,4,4,take a short nap
+sad,3,5,0,3,self compassion break
+calm,7,2,3,2,mindful meditation
+overwhelmed,4,5,8,2,take a short nap
+anxious,4,5,0,1,take a short nap
+stressed,7,3,2,2,mindful meditation
+tired,6,3,1,2,take a short nap
+motivated,9,2,6,5,deep work session
+stressed,5,5,2,2,take a short nap
+motivated,9,3,8,3,start a challenging task
+overwhelmed,4,4,5,1,take a short nap
+motivated,9,1,7,3,start a challenging task
+tired,5,2,1,1,take a short nap
+happy,9,3,5,4,deep work session
+calm,6,1,4,4,mindful meditation
+overwhelmed,6,4,6,1,breathing exercise
+overwhelmed,5,4,5,2,take a short nap
+happy,9,3,10,3,start a challenging task
+stressed,7,4,7,3,digital detox
+anxious,3,4,0,3,take a short nap
+happy,6,3,5,4,start a challenging task
+calm,7,1,3,3,mindful meditation
+overwhelmed,6,4,3,1,breathing exercise
+overwhelmed,6,4,3,1,breathing exercise
+overwhelmed,6,5,4,2,breathing exercise
+motivated,9,3,9,5,start a challenging task
+calm,8,5,7,5,mindful meditation
+tired,6,2,4,1,take a short nap
+tired,3,4,0,4,take a short nap
+anxious,6,4,1,3,breathing exercise
+tired,6,3,5,4,take a short nap
+tired,5,2,4,4,take a short nap
+tired,6,3,2,3,take a short nap
+anxious,4,5,2,2,take a short nap
+happy,6,2,9,5,start a challenging task
+tired,6,3,1,3,take a short nap
+overwhelmed,4,4,3,1,take a short nap
+calm,6,2,7,5,mindful meditation
+calm,7,1,6,5,creative activity
+happy,9,2,7,3,start a challenging task
+sad,5,2,1,2,gratitude practice
+tired,3,3,1,3,take a short nap
+motivated,8,3,10,3,start a challenging task
+tired,3,3,1,1,take a short nap
+anxious,5,5,0,2,take a short nap
+happy,8,1,5,4,deep work session
+anxious,6,4,2,2,gratitude practice
+motivated,8,2,7,5,start a challenging task
+happy,7,1,7,3,start a challenging task
+calm,6,3,3,3,mindful meditation
+anxious,6,5,4,3,breathing exercise
+sad,7,5,4,3,self compassion break
+sad,7,2,3,3,write in journal
+motivated,7,2,7,4,start a challenging task
+motivated,9,1,10,5,start a challenging task
+stressed,4,4,7,1,take a short nap
+motivated,6,2,8,5,start a challenging task
+sad,7,3,4,1,gratitude practice
+overwhelmed,3,5,3,2,take a short nap
+stressed,7,5,7,1,digital detox
+tired,3,3,4,1,take a short nap
+calm,6,1,5,3,mindful meditation
+anxious,5,4,0,3,take a short nap
+anxious,5,1,0,3,breathing exercise
+anxious,6,5,5,2,breathing exercise
+anxious,3,4,2,1,take a short nap
+anxious,4,5,0,1,take a short nap
+stressed,4,3,2,2,take a short nap
+anxious,4,5,0,3,take a short nap
+motivated,7,2,6,4,deep work session
+motivated,8,3,7,3,start a challenging task
+sad,4,3,4,1,gratitude practice
+tired,6,2,1,2,take a short nap
+tired,5,2,0,4,take a short nap
+anxious,3,4,1,3,take a short nap
+happy,9,2,10,4,start a challenging task
+stressed,7,5,2,2,mindful meditation
+calm,6,1,5,2,mindful meditation
+happy,8,2,9,5,start a challenging task
+overwhelmed,6,4,6,2,breathing exercise
+overwhelmed,4,4,8,2,take a short nap
+motivated,6,3,9,3,start a challenging task
+overwhelmed,8,2,7,2,breathing exercise
+happy,6,3,8,5,start a challenging task
+anxious,8,2,5,1,breathing exercise
+calm,6,2,5,4,mindful meditation
+calm,9,2,7,4,deep work session
+happy,7,1,7,4,start a challenging task
+happy,5,3,8,4,start a challenging task
+sad,3,3,2,2,gratitude practice
+tired,5,2,5,4,take a short nap
+sad,6,3,1,3,social connection
+happy,9,2,6,5,deep work session
+sad,5,5,4,3,self compassion break
+calm,8,3,7,3,mindful meditation
+anxious,5,4,4,2,take a short nap
+happy,8,1,10,4,start a challenging task
+motivated,8,2,8,5,start a challenging task
+stressed,5,4,2,1,take a short nap
+motivated,9,3,8,3,start a challenging task
+anxious,8,3,5,2,breathing exercise
+motivated,8,3,8,3,start a challenging task
+anxious,4,4,3,3,take a short nap
+stressed,6,3,7,2,digital detox
+calm,9,1,3,4,creative activity
+happy,8,2,5,3,start a challenging task
+sad,6,2,0,2,gratitude practice
+calm,6,3,7,3,mindful meditation
+sad,4,3,2,3,social connection
+happy,9,3,7,5,start a challenging task
+sad,7,2,0,3,social connection
+motivated,6,2,6,4,start a challenging task
+calm,8,3,8,2,mindful meditation
+tired,4,4,1,2,take a short nap
+calm,6,2,5,2,mindful meditation
+anxious,6,5,3,3,breathing exercise
+tired,5,3,3,2,take a short nap
+motivated,8,1,6,4,deep work session
+calm,7,1,4,2,mindful meditation
+happy,8,1,5,5,deep work session
+stressed,6,5,5,1,mindful meditation
+motivated,9,2,8,4,start a challenging task
+happy,8,2,10,5,start a challenging task
+happy,9,5,9,3,start a challenging task
+motivated,9,3,9,3,start a challenging task
+happy,6,2,8,3,start a challenging task
+sad,4,2,3,2,gratitude practice
+tired,3,2,1,4,take a short nap
+tired,3,3,1,3,take a short nap
+stressed,4,1,7,2,take a short nap
+tired,3,2,1,2,take a short nap
+anxious,6,4,5,3,breathing exercise
+calm,7,1,8,5,deep work session
+overwhelmed,3,2,9,2,breathing exercise
+happy,6,2,9,3,start a challenging task
+tired,3,2,0,4,take a short nap
+overwhelmed,4,5,9,2,take a short nap
+sad,7,4,2,2,self compassion break
+stressed,5,5,6,1,take a short nap
+anxious,3,4,2,2,take a short nap
+calm,6,3,3,2,mindful meditation
+motivated,9,2,6,5,deep work session
+stressed,4,4,6,3,take a short nap
+overwhelmed,4,5,9,2,take a short nap
+tired,3,2,1,4,take a short nap
+overwhelmed,4,4,5,2,take a short nap
+stressed,6,5,3,2,mindful meditation
+calm,4,4,6,5,mindful meditation
+stressed,4,4,6,1,take a short nap
+happy,4,2,6,5,start a challenging task
+stressed,6,3,6,1,mindful meditation
+tired,4,2,0,4,take a short nap
+stressed,7,4,7,1,digital detox
+motivated,7,1,6,4,deep work session
+motivated,6,1,9,3,start a challenging task
+overwhelmed,6,5,8,1,digital detox
+stressed,6,5,5,3,breathing exercise
+motivated,6,2,10,4,start a challenging task
+motivated,7,3,7,3,start a challenging task
+calm,6,1,4,4,mindful meditation
+motivated,6,1,7,3,start a challenging task
+calm,6,3,3,3,mindful meditation
+sad,4,5,0,1,self compassion break
+happy,9,3,8,3,start a challenging task
+stressed,6,5,7,1,digital detox
+calm,7,2,7,5,deep work session
+sad,3,5,0,1,self compassion break
+tired,5,4,4,2,take a short nap
+sad,7,2,4,1,gratitude practice
+stressed,7,3,6,2,mindful meditation
+overwhelmed,4,5,4,2,take a short nap
+sad,6,2,4,3,write in journal
+tired,5,3,3,4,take a short nap
+motivated,7,1,8,4,start a challenging task
+sad,6,4,3,1,self compassion break
+motivated,6,3,6,3,start a challenging task
+stressed,4,3,7,2,take a short nap
+tired,4,3,1,2,take a short nap
+motivated,7,2,7,3,start a challenging task
+sad,5,4,3,1,self compassion break
+tired,5,3,5,2,take a short nap
+happy,9,3,10,5,start a challenging task
+happy,7,2,10,4,start a challenging task
+overwhelmed,3,4,9,1,take a short nap
+sad,4,4,0,2,self compassion break
+motivated,8,3,9,4,start a challenging task
+anxious,4,5,1,1,take a short nap
+calm,7,1,4,4,creative activity
+sad,6,4,3,1,self compassion break
+anxious,4,4,2,3,take a short nap
+happy,7,1,8,5,start a challenging task
+stressed,6,5,2,3,breathing exercise
+happy,8,2,9,5,start a challenging task
+overwhelmed,5,5,8,2,take a short nap
+stressed,4,4,4,2,take a short nap
+overwhelmed,3,5,7,1,take a short nap
+anxious,5,5,1,2,take a short nap
+tired,4,2,2,3,take a short nap
+stressed,4,5,3,3,take a short nap
+overwhelmed,3,4,9,1,take a short nap
+calm,5,1,3,4,mindful meditation
+overwhelmed,3,4,9,2,take a short nap
+sad,9,1,0,3,social connection
+sad,4,3,0,3,social connection
+happy,9,2,6,5,deep work session
+anxious,4,4,1,2,take a short nap
+stressed,5,4,3,3,take a short nap
+motivated,9,1,6,4,deep work session
+sad,7,3,2,3,social connection
+stressed,6,4,6,2,mindful meditation
+motivated,6,4,7,5,start a challenging task
+sad,7,3,4,1,gratitude practice
+calm,8,1,7,3,deep work session
+sad,4,5,3,1,self compassion break
+sad,5,2,4,2,gratitude practice
+happy,3,2,10,3,start a challenging task
+tired,5,2,4,3,take a short nap
+motivated,6,3,10,3,start a challenging task
+tired,6,3,0,3,take a short nap
+sad,4,2,2,2,gratitude practice
+sad,4,4,1,1,self compassion break
+overwhelmed,6,4,8,2,digital detox
+sad,4,5,0,1,self compassion break
+sad,7,5,1,3,self compassion break
+calm,9,3,3,3,mindful meditation
+happy,8,1,10,4,start a challenging task
+overwhelmed,3,5,3,1,take a short nap
+stressed,7,1,4,1,mindful meditation
+happy,6,1,5,5,start a challenging task
+tired,6,2,1,2,take a short nap
+sad,5,5,1,1,self compassion break
+sad,3,3,2,1,gratitude practice
+calm,6,2,6,4,mindful meditation
+calm,8,3,7,2,mindful meditation
+stressed,7,3,3,2,mindful meditation
+anxious,5,4,4,1,take a short nap
+calm,6,3,6,4,mindful meditation
+happy,9,2,10,5,start a challenging task
+overwhelmed,6,5,5,2,breathing exercise
+sad,6,5,2,1,self compassion break
+motivated,9,3,8,5,start a challenging task
+happy,9,3,6,5,deep work session
+tired,3,2,5,3,take a short nap
+anxious,4,5,2,1,take a short nap
+happy,9,2,5,5,deep work session
+motivated,8,3,8,5,start a challenging task
+overwhelmed,6,2,8,2,breathing exercise
+motivated,8,5,8,4,start a challenging task
+overwhelmed,6,5,7,2,digital detox
+calm,6,1,3,3,mindful meditation
+stressed,7,3,4,1,mindful meditation
+overwhelmed,3,4,7,2,take a short nap
+stressed,5,4,7,3,take a short nap
+motivated,6,2,8,5,start a challenging task
+calm,8,2,3,2,mindful meditation
+happy,6,2,5,4,start a challenging task
+motivated,6,2,7,4,start a challenging task
+calm,9,2,8,5,deep work session
+stressed,6,5,6,1,mindful meditation
+anxious,3,4,0,3,take a short nap
+stressed,5,4,3,1,take a short nap
+anxious,4,4,4,3,take a short nap
+tired,3,2,3,1,take a short nap
+sad,5,3,3,2,gratitude practice
+overwhelmed,6,5,9,1,digital detox
+sad,7,4,2,1,self compassion break
+stressed,6,5,7,2,digital detox
+calm,7,1,6,2,mindful meditation
+happy,9,2,9,3,start a challenging task
+anxious,4,4,2,2,take a short nap
+stressed,6,5,6,3,breathing exercise
+sad,4,2,0,1,gratitude practice
+motivated,8,3,8,3,start a challenging task
+calm,8,1,6,3,mindful meditation
+stressed,4,3,2,1,take a short nap
+sad,4,2,2,2,gratitude practice
+stressed,5,5,3,3,take a short nap
+calm,9,2,6,4,creative activity
+motivated,9,2,8,4,start a challenging task
+sad,3,5,1,3,self compassion break
+stressed,6,4,7,2,digital detox
+overwhelmed,4,4,7,2,take a short nap
+happy,7,2,8,3,start a challenging task
+happy,8,3,8,3,start a challenging task
+overwhelmed,5,4,6,1,take a short nap
+overwhelmed,4,5,8,2,take a short nap
+happy,6,2,9,4,start a challenging task
+tired,5,3,3,3,take a short nap
+tired,5,2,0,3,take a short nap
+tired,8,3,3,1,take a short nap
+overwhelmed,3,5,7,2,take a short nap
+stressed,4,5,3,2,take a short nap
+stressed,6,5,5,1,mindful meditation
+happy,9,3,9,4,start a challenging task
+calm,7,1,6,2,mindful meditation
+motivated,7,1,6,3,start a challenging task
+tired,3,2,5,3,take a short nap
+anxious,5,4,5,2,take a short nap
+overwhelmed,3,5,7,2,take a short nap
+anxious,6,5,1,3,breathing exercise
+stressed,6,5,7,2,digital detox
+sad,3,3,1,3,social connection
+sad,7,5,4,2,self compassion break
+motivated,8,2,9,5,start a challenging task
+overwhelmed,6,5,6,1,breathing exercise
+calm,6,3,4,4,mindful meditation
+sad,7,3,4,1,gratitude practice
+sad,5,5,1,3,self compassion break
+overwhelmed,6,5,7,2,digital detox
+stressed,5,2,7,3,take a short nap
+anxious,3,4,2,2,take a short nap
+stressed,7,3,6,2,mindful meditation
+overwhelmed,9,1,9,2,breathing exercise
+happy,8,2,6,3,start a challenging task
+motivated,9,2,10,3,start a challenging task
+motivated,8,1,10,5,start a challenging task
+stressed,4,3,5,1,take a short nap
+motivated,9,1,6,4,deep work session
+tired,6,3,0,2,take a short nap
+overwhelmed,3,4,4,2,take a short nap
+stressed,6,4,5,1,mindful meditation
+sad,9,4,3,1,self compassion break
+tired,6,4,5,3,take a short nap
+tired,6,3,2,4,take a short nap
+overwhelmed,5,5,9,1,take a short nap
+overwhelmed,4,5,3,2,take a short nap
+overwhelmed,3,4,3,2,take a short nap
+sad,3,5,3,2,self compassion break
+overwhelmed,4,5,9,2,take a short nap
+tired,6,3,4,1,take a short nap
+motivated,8,1,8,3,start a challenging task
+tired,4,3,4,1,take a short nap
+motivated,9,1,10,3,start a challenging task
+anxious,3,5,3,2,take a short nap
+stressed,7,5,3,3,breathing exercise
+anxious,4,4,4,3,take a short nap
+happy,7,2,5,5,deep work session
+happy,9,3,7,3,start a challenging task
+overwhelmed,3,4,7,2,take a short nap
+happy,6,3,5,4,start a challenging task
+calm,8,1,4,3,mindful meditation
+tired,6,4,2,2,take a short nap
+motivated,6,3,8,3,start a challenging task
+stressed,4,4,2,3,take a short nap
+anxious,6,4,0,1,gratitude practice
+sad,5,5,3,2,self compassion break
+calm,7,2,4,3,mindful meditation
+motivated,9,2,8,4,start a challenging task
+sad,7,3,4,2,gratitude practice
+sad,7,3,0,1,gratitude practice
+overwhelmed,6,5,3,1,breathing exercise
+happy,9,2,5,4,deep work session
+sad,7,2,4,3,write in journal
+overwhelmed,4,5,7,2,take a short nap
+calm,9,1,6,5,creative activity
+motivated,9,1,8,5,start a challenging task
+anxious,6,4,2,1,gratitude practice
+overwhelmed,4,5,4,2,take a short nap
+tired,5,3,5,1,take a short nap
+calm,8,2,4,5,creative activity
+happy,7,2,6,4,deep work session
+anxious,4,5,1,3,take a short nap
+calm,6,2,7,2,mindful meditation
+happy,8,2,7,5,start a challenging task
+calm,9,1,4,3,mindful meditation
+sad,5,2,4,1,gratitude practice
+anxious,5,5,2,1,take a short nap
+tired,6,4,0,4,take a short nap
+motivated,6,2,8,5,start a challenging task
+motivated,9,1,7,4,start a challenging task
+overwhelmed,6,5,4,1,breathing exercise
+motivated,9,3,7,3,start a challenging task
+stressed,6,4,2,2,mindful meditation
+overwhelmed,3,5,8,1,take a short nap
+happy,6,3,10,3,start a challenging task
+overwhelmed,5,4,3,2,take a short nap
+calm,9,2,6,4,creative activity
+tired,4,2,4,3,take a short nap
+happy,8,1,10,3,start a challenging task
+motivated,6,2,7,5,start a challenging task
+calm,9,2,7,3,deep work session
+sad,5,3,0,1,gratitude practice
+sad,3,2,2,3,social connection
+calm,6,5,8,3,mindful meditation
+calm,7,2,8,2,deep work session
+anxious,6,5,4,3,breathing exercise
+tired,5,3,0,2,take a short nap
+overwhelmed,3,4,7,1,take a short nap
+sad,5,2,0,3,social connection
+happy,6,3,6,5,start a challenging task
+stressed,7,4,2,3,breathing exercise
+tired,5,3,4,1,take a short nap
+motivated,6,1,8,4,start a challenging task
+motivated,9,1,7,5,start a challenging task
+happy,6,1,10,4,start a challenging task
+happy,7,1,6,5,deep work session
+stressed,7,5,5,1,mindful meditation
+calm,6,2,8,5,mindful meditation
+happy,6,2,7,5,start a challenging task
+happy,4,1,6,3,start a challenging task
+calm,7,2,5,4,creative activity
+happy,7,1,9,3,start a challenging task
+sad,7,3,4,1,gratitude practice
+tired,6,2,1,3,take a short nap
+stressed,4,4,4,2,take a short nap
+overwhelmed,4,4,3,2,take a short nap
+sad,5,3,0,3,social connection
+stressed,5,4,4,3,take a short nap
+anxious,4,5,3,3,take a short nap
+overwhelmed,4,5,3,2,take a short nap
+calm,6,1,5,3,mindful meditation
+tired,6,4,2,4,take a short nap
+motivated,6,3,8,5,start a challenging task
+calm,8,2,5,3,mindful meditation
+anxious,4,4,4,3,take a short nap
+motivated,8,2,6,5,deep work session
+calm,8,3,6,5,mindful meditation
+overwhelmed,4,4,8,2,take a short nap
+calm,7,2,3,2,mindful meditation
+tired,3,3,4,2,take a short nap
+tired,4,3,5,1,take a short nap
+happy,8,1,8,3,start a challenging task
+tired,6,2,5,2,take a short nap
+stressed,5,5,2,3,take a short nap
+stressed,5,4,6,1,take a short nap
+happy,6,1,7,3,start a challenging task
+happy,9,3,7,5,start a challenging task
+happy,9,3,6,4,deep work session
+calm,9,2,6,2,mindful meditation
+sad,7,2,3,3,write in journal
+stressed,5,5,5,1,take a short nap
+happy,8,1,5,5,deep work session
+anxious,4,4,2,3,take a short nap
+anxious,5,4,5,3,take a short nap
+overwhelmed,3,5,8,2,take a short nap
+overwhelmed,4,2,3,1,breathing exercise
+anxious,6,5,0,2,gratitude practice
+tired,4,3,5,3,take a short nap
+motivated,8,1,6,3,start a challenging task
+anxious,5,5,3,3,take a short nap
+overwhelmed,4,4,9,1,take a short nap
+tired,3,3,3,3,take a short nap
+tired,6,4,4,2,take a short nap
+stressed,7,4,4,3,breathing exercise
+stressed,7,3,3,1,mindful meditation
+anxious,4,4,1,3,take a short nap
+calm,7,1,3,2,mindful meditation
+motivated,8,3,9,3,start a challenging task
+happy,7,1,6,3,start a challenging task
+happy,7,2,5,5,deep work session
+stressed,4,5,6,2,take a short nap
+calm,9,2,4,5,creative activity
+overwhelmed,5,5,8,2,take a short nap
+happy,7,1,9,3,start a challenging task
+calm,6,3,3,3,mindful meditation
+motivated,7,2,8,4,start a challenging task
+calm,6,1,8,4,mindful meditation
+calm,9,3,5,5,mindful meditation
+happy,6,2,7,5,start a challenging task
+sad,3,4,2,1,self compassion break
+tired,5,2,2,2,take a short nap
+motivated,7,3,9,3,start a challenging task
+happy,7,2,6,4,deep work session
+overwhelmed,5,4,4,1,take a short nap
+happy,9,1,10,4,start a challenging task
+motivated,9,2,7,4,start a challenging task
+tired,6,4,5,1,take a short nap
+happy,9,1,7,3,start a challenging task
+happy,8,1,8,4,start a challenging task
+overwhelmed,5,5,7,1,take a short nap
+tired,6,4,0,4,take a short nap
+sad,4,4,4,1,self compassion break
+anxious,4,5,5,3,take a short nap
+anxious,6,5,0,2,gratitude practice
+anxious,5,5,5,2,take a short nap
+calm,8,1,8,4,deep work session
+happy,8,3,8,3,start a challenging task
+calm,9,1,5,3,mindful meditation
+anxious,4,4,0,3,take a short nap
+calm,6,3,7,3,mindful meditation
+overwhelmed,3,5,8,2,take a short nap
+calm,8,1,8,4,deep work session
+stressed,4,4,7,2,take a short nap
+tired,3,2,5,1,take a short nap
+stressed,4,5,2,3,take a short nap
+happy,7,2,8,3,start a challenging task
+stressed,4,3,7,2,take a short nap
+happy,9,3,8,5,start a challenging task
+calm,7,1,4,5,creative activity
+motivated,9,3,9,3,start a challenging task
+tired,5,2,5,4,take a short nap
+motivated,8,2,9,5,start a challenging task
+tired,5,3,0,2,take a short nap
+tired,5,2,1,1,take a short nap
+sad,7,5,1,3,self compassion break
+anxious,3,5,1,2,take a short nap
+happy,6,1,6,3,start a challenging task
+happy,9,1,8,4,start a challenging task
+happy,7,1,6,4,deep work session
+happy,6,2,6,5,start a challenging task
+happy,9,1,6,4,deep work session
+calm,7,3,7,2,mindful meditation
+happy,8,1,10,5,start a challenging task
+anxious,6,4,2,2,gratitude practice
+anxious,6,5,1,1,gratitude practice
+happy,6,3,9,3,start a challenging task
+happy,9,1,8,5,start a challenging task
+sad,4,4,3,2,self compassion break
+sad,7,5,1,1,self compassion break
+happy,9,4,10,4,start a challenging task
+happy,6,2,5,4,start a challenging task
+overwhelmed,3,4,7,2,take a short nap
+anxious,3,5,2,3,take a short nap
+calm,7,2,5,3,mindful meditation
+anxious,5,4,1,3,take a short nap
+sad,3,5,2,2,self compassion break
+happy,7,2,10,4,start a challenging task
+happy,8,3,9,3,start a challenging task
+motivated,8,2,8,5,start a challenging task
+anxious,4,5,1,3,take a short nap
+sad,6,3,4,3,write in journal
+tired,6,4,1,2,take a short nap
+happy,8,1,6,5,deep work session
+overwhelmed,6,4,5,1,breathing exercise
+calm,7,1,5,5,creative activity
+stressed,6,4,7,3,digital detox
+happy,9,1,6,5,deep work session
+motivated,6,1,10,3,start a challenging task
+happy,7,1,7,4,start a challenging task
+overwhelmed,4,4,8,1,take a short nap
+tired,5,4,1,4,take a short nap
+sad,7,4,1,3,self compassion break
+anxious,4,4,3,2,take a short nap
+anxious,4,5,3,1,take a short nap
+anxious,5,4,0,3,take a short nap
+sad,6,4,4,2,self compassion break
+sad,5,5,4,3,self compassion break
+motivated,8,3,8,5,start a challenging task
+happy,9,3,10,5,start a challenging task
+anxious,5,4,3,2,take a short nap
+motivated,6,3,8,3,start a challenging task
+tired,6,2,3,3,take a short nap
+happy,9,3,6,4,deep work session
+anxious,4,5,3,2,take a short nap
+calm,9,1,3,3,mindful meditation
+happy,7,3,5,5,deep work session
+stressed,7,5,5,3,breathing exercise
+overwhelmed,4,5,4,2,take a short nap
+happy,6,2,7,3,start a challenging task
+happy,6,1,10,4,start a challenging task
+stressed,6,4,7,3,digital detox
+anxious,6,5,5,1,breathing exercise
+motivated,6,2,8,3,start a challenging task
+calm,9,1,5,5,creative activity
+overwhelmed,6,3,7,1,breathing exercise
+anxious,6,4,2,3,breathing exercise
+happy,6,1,10,4,start a challenging task
+stressed,4,3,3,2,take a short nap
+tired,5,3,0,3,take a short nap
+tired,3,2,2,2,take a short nap
+tired,5,3,2,3,take a short nap
+happy,7,2,7,4,start a challenging task
+stressed,6,3,2,2,mindful meditation
+calm,6,2,8,4,mindful meditation
+overwhelmed,4,5,7,1,take a short nap
+tired,4,2,0,1,take a short nap
+sad,4,3,1,2,gratitude practice
+overwhelmed,3,5,5,2,take a short nap
+stressed,5,3,2,3,take a short nap
+anxious,6,4,5,1,breathing exercise
+stressed,5,4,3,2,take a short nap
+motivated,9,3,6,3,start a challenging task
+anxious,3,5,1,2,take a short nap
+stressed,5,3,6,1,take a short nap
+stressed,4,4,7,3,take a short nap
+happy,9,3,9,5,start a challenging task
+calm,8,1,3,3,mindful meditation
+stressed,5,3,5,3,take a short nap
+sad,4,3,0,2,gratitude practice
+happy,6,1,9,3,start a challenging task
+sad,4,2,1,2,gratitude practice
+stressed,5,5,3,3,take a short nap
+happy,8,3,9,4,start a challenging task
+happy,8,2,9,5,start a challenging task
+tired,4,4,0,1,take a short nap
+motivated,9,3,9,4,start a challenging task
+stressed,6,4,6,3,breathing exercise
+tired,5,3,0,1,take a short nap
+overwhelmed,3,5,7,1,take a short nap
+stressed,6,4,2,1,mindful meditation
+anxious,5,5,1,1,take a short nap
+stressed,7,4,7,1,digital detox
+happy,9,1,9,4,start a challenging task
+motivated,8,3,6,5,deep work session
+calm,4,3,6,3,mindful meditation
+motivated,9,1,6,5,deep work session
+sad,3,4,0,2,self compassion break
+motivated,8,2,7,4,start a challenging task
+sad,7,4,1,1,self compassion break
+sad,3,5,4,2,self compassion break
+anxious,4,4,3,2,take a short nap
+tired,5,2,5,1,take a short nap
+motivated,5,4,7,5,take a short nap
+stressed,4,4,6,2,take a short nap
+overwhelmed,6,5,5,1,breathing exercise
+tired,5,2,4,3,take a short nap
+sad,5,2,2,1,gratitude practice
+calm,6,3,3,2,mindful meditation
+calm,6,1,6,3,mindful meditation
+overwhelmed,4,5,9,2,take a short nap
+sad,3,3,2,2,gratitude practice
+calm,8,2,8,5,deep work session
+calm,9,2,7,5,deep work session
+tired,3,4,0,4,take a short nap
+calm,7,2,8,2,deep work session
+stressed,4,5,3,3,take a short nap
+stressed,6,3,6,2,mindful meditation
+tired,3,3,2,3,take a short nap
+tired,3,2,1,4,take a short nap
+motivated,7,3,6,3,start a challenging task
+calm,6,3,7,4,mindful meditation
+anxious,5,5,1,1,take a short nap
+motivated,7,1,7,5,start a challenging task
+sad,7,4,3,1,self compassion break
+sad,4,3,3,1,gratitude practice
+calm,6,2,5,4,mindful meditation
+tired,6,4,1,1,take a short nap
+sad,4,5,0,3,self compassion break
+anxious,3,4,2,1,take a short nap
+stressed,4,4,6,2,take a short nap
+anxious,5,5,5,2,take a short nap
+stressed,4,5,7,1,take a short nap
+anxious,6,5,1,2,gratitude practice
+stressed,4,3,6,1,take a short nap
+anxious,3,4,5,2,take a short nap
+anxious,5,4,5,3,take a short nap
+tired,4,3,3,4,take a short nap
+sad,6,5,2,3,self compassion break
+happy,9,3,10,3,start a challenging task
+tired,4,2,4,2,take a short nap
+sad,5,4,3,1,self compassion break
+stressed,5,3,3,2,take a short nap
+calm,9,2,3,5,creative activity
+anxious,3,2,1,1,gratitude practice
+happy,9,1,9,3,start a challenging task
+happy,9,1,8,4,start a challenging task
+tired,3,2,2,2,take a short nap
+sad,5,4,3,1,self compassion break
+anxious,5,5,1,3,take a short nap
+sad,3,3,0,2,gratitude practice
+tired,3,4,0,2,take a short nap
+calm,8,1,7,5,deep work session
+overwhelmed,3,4,5,2,take a short nap
+motivated,8,1,8,4,start a challenging task
+motivated,9,1,6,3,start a challenging task
+tired,4,3,3,3,take a short nap
+sad,7,3,0,3,social connection
+sad,6,5,4,3,self compassion break
+overwhelmed,6,5,5,1,breathing exercise
+motivated,7,3,10,4,start a challenging task
+stressed,6,4,5,2,mindful meditation
+stressed,6,3,7,3,digital detox
+anxious,6,5,4,1,breathing exercise
+calm,6,3,3,3,mindful meditation
+happy,8,1,5,3,start a challenging task
+tired,3,4,5,1,take a short nap
+happy,7,1,6,3,start a challenging task
+calm,8,1,6,2,mindful meditation
+happy,8,3,7,5,start a challenging task
+overwhelmed,6,5,9,1,digital detox
+tired,5,3,4,3,take a short nap
+sad,4,4,2,1,self compassion break
+stressed,6,3,4,1,mindful meditation
+overwhelmed,5,5,8,1,take a short nap
+tired,3,3,1,1,take a short nap
+tired,8,2,4,2,light exercise
+overwhelmed,5,5,6,1,take a short nap
+overwhelmed,5,4,4,1,take a short nap
+motivated,9,2,7,5,start a challenging task
+motivated,6,2,9,3,start a challenging task
+tired,6,3,1,2,take a short nap
+happy,8,3,6,5,deep work session
+tired,6,4,3,4,take a short nap
+stressed,4,4,5,1,take a short nap
+overwhelmed,4,4,6,1,take a short nap
+sad,7,3,4,1,gratitude practice
+happy,8,2,5,4,deep work session
+stressed,5,3,3,1,take a short nap
+tired,6,3,4,3,take a short nap
+stressed,5,3,7,1,take a short nap
+anxious,4,5,3,3,take a short nap
+sad,4,3,4,1,gratitude practice
+motivated,7,3,8,4,start a challenging task
+sad,5,2,4,2,gratitude practice
+tired,6,4,4,1,take a short nap
+tired,5,4,0,1,take a short nap
+calm,8,3,7,5,mindful meditation
+sad,7,2,0,2,gratitude practice
+calm,6,1,3,3,mindful meditation
+happy,7,2,8,4,start a challenging task
+calm,9,1,4,4,creative activity
+overwhelmed,4,5,6,1,take a short nap
+anxious,5,4,4,2,take a short nap
+tired,5,3,0,3,take a short nap
+stressed,7,3,3,1,mindful meditation
+stressed,4,4,5,3,take a short nap
+anxious,6,5,2,3,breathing exercise
+sad,7,5,1,2,self compassion break
+tired,5,2,1,4,take a short nap
+tired,5,2,2,2,take a short nap
+happy,7,2,8,3,start a challenging task
+anxious,6,5,5,2,breathing exercise
+calm,9,3,8,4,mindful meditation
+tired,3,3,1,3,take a short nap
+tired,3,3,3,1,take a short nap
+sad,5,5,4,1,self compassion break
+sad,5,5,2,3,self compassion break
+tired,3,4,5,4,take a short nap
+stressed,6,3,3,2,mindful meditation
+overwhelmed,4,4,6,1,take a short nap
+stressed,4,1,4,1,take a short nap
+sad,5,2,2,3,social connection
+anxious,6,5,1,3,breathing exercise
+sad,6,2,3,2,gratitude practice
+calm,6,3,6,4,mindful meditation
+calm,7,2,7,2,deep work session
+motivated,7,5,10,3,start a challenging task
+motivated,9,1,6,4,deep work session
+happy,6,2,6,5,start a challenging task
+anxious,4,5,4,3,take a short nap
+motivated,6,1,7,4,start a challenging task
+motivated,9,1,7,5,start a challenging task
+happy,8,3,5,3,start a challenging task
+tired,4,2,4,3,take a short nap
+anxious,6,4,1,3,breathing exercise
+stressed,6,3,5,3,breathing exercise
+stressed,6,4,6,3,breathing exercise
+calm,6,2,7,4,mindful meditation
+happy,7,5,7,3,start a challenging task
+stressed,5,5,5,3,take a short nap
+sad,3,4,2,3,self compassion break
+stressed,6,4,2,3,breathing exercise
+overwhelmed,6,5,9,2,digital detox
+motivated,6,1,7,4,start a challenging task
+happy,7,3,10,5,start a challenging task
+overwhelmed,4,3,3,1,breathing exercise
+calm,7,2,6,2,mindful meditation
+overwhelmed,6,5,5,2,breathing exercise
+stressed,7,4,6,1,mindful meditation
+sad,7,3,0,3,social connection
+anxious,3,4,0,1,take a short nap
+calm,8,2,8,5,deep work session
+happy,9,1,8,5,start a challenging task
+sad,6,2,1,2,gratitude practice
+motivated,9,1,7,5,start a challenging task
+calm,7,2,4,3,mindful meditation
+sad,9,5,3,3,self compassion break
+overwhelmed,6,5,7,1,digital detox
+anxious,6,5,0,1,gratitude practice
+calm,6,3,7,5,mindful meditation
+motivated,7,3,6,5,deep work session
+tired,5,5,5,1,take a short nap
+sad,6,3,3,1,gratitude practice
+anxious,6,5,3,2,breathing exercise
+calm,7,2,8,2,deep work session
+happy,9,2,9,5,start a challenging task
+motivated,7,3,8,5,start a challenging task
+overwhelmed,3,4,3,2,take a short nap
+sad,7,2,4,2,gratitude practice
+calm,8,3,8,3,mindful meditation
+overwhelmed,4,5,6,1,take a short nap
+happy,8,3,7,5,start a challenging task
+sad,5,3,1,2,gratitude practice
+anxious,5,5,5,1,take a short nap
+overwhelmed,6,4,7,2,digital detox
+sad,6,4,1,2,self compassion break
+motivated,8,2,9,5,start a challenging task
+stressed,6,4,6,2,mindful meditation
+stressed,4,3,5,3,take a short nap
+happy,8,1,6,3,start a challenging task
+motivated,6,2,9,5,start a challenging task
+motivated,4,3,6,4,start a challenging task
+tired,5,2,5,3,take a short nap
+tired,5,3,3,2,take a short nap
+anxious,4,4,2,2,take a short nap
+calm,8,3,8,5,mindful meditation
+overwhelmed,4,5,4,1,take a short nap
+overwhelmed,3,5,8,1,take a short nap
+calm,7,1,7,4,deep work session
+sad,8,4,4,2,self compassion break
+happy,7,3,8,4,start a challenging task
+sad,7,5,1,2,self compassion break
+anxious,3,4,1,3,take a short nap
+motivated,9,2,9,5,start a challenging task
+motivated,7,2,9,3,start a challenging task
+overwhelmed,5,4,3,2,take a short nap
+tired,5,4,3,3,take a short nap
+calm,9,2,3,2,mindful meditation
+stressed,6,4,6,2,mindful meditation
+tired,6,2,2,1,take a short nap
+sad,7,2,3,1,gratitude practice
+anxious,3,5,1,1,take a short nap
+sad,4,4,1,3,self compassion break
+tired,4,4,5,2,take a short nap
+tired,3,2,5,2,take a short nap
+stressed,7,4,7,3,digital detox
+overwhelmed,6,2,7,1,breathing exercise
+calm,8,1,3,5,creative activity
+happy,6,1,5,3,start a challenging task
+motivated,6,1,9,4,start a challenging task
+stressed,4,3,4,1,take a short nap
+stressed,5,5,4,2,take a short nap
+anxious,8,4,3,2,breathing exercise
+motivated,8,1,6,5,deep work session
+motivated,8,3,9,3,start a challenging task
+motivated,6,1,6,4,start a challenging task
+happy,8,1,9,4,start a challenging task
+sad,7,5,0,1,self compassion break
+tired,3,4,4,3,take a short nap
+anxious,3,4,3,2,take a short nap
+tired,7,2,1,3,light exercise
+overwhelmed,6,5,5,2,breathing exercise
+happy,7,3,9,4,start a challenging task
+tired,6,3,0,4,take a short nap
+tired,4,4,0,3,take a short nap
+tired,4,4,5,1,take a short nap
+overwhelmed,4,4,8,1,take a short nap
+stressed,5,3,4,1,take a short nap
+calm,7,3,7,2,mindful meditation
+overwhelmed,4,5,6,2,take a short nap
+sad,7,4,4,1,self compassion break
+happy,7,3,8,3,start a challenging task
+tired,5,3,3,2,take a short nap
+anxious,3,5,1,1,take a short nap
+overwhelmed,5,4,6,2,take a short nap
+sad,3,4,3,3,self compassion break
+calm,7,2,3,4,creative activity
+calm,6,2,7,3,mindful meditation
+tired,4,4,3,3,take a short nap
+stressed,7,3,3,3,breathing exercise
+anxious,5,4,0,1,take a short nap
+stressed,7,3,6,3,breathing exercise
+motivated,6,1,7,5,start a challenging task
+calm,6,2,8,5,mindful meditation
+tired,5,2,1,1,take a short nap
+tired,6,2,3,4,take a short nap
+sad,3,2,1,3,social connection
+calm,8,1,7,5,deep work session
+calm,7,3,5,2,mindful meditation
+overwhelmed,4,5,9,2,take a short nap
+overwhelmed,6,4,6,2,breathing exercise
+anxious,4,4,0,3,take a short nap
+tired,5,3,4,3,take a short nap
+sad,7,4,4,3,self compassion break
+happy,6,2,7,5,start a challenging task
+calm,9,3,6,4,mindful meditation
+anxious,6,5,2,3,breathing exercise
+tired,4,2,3,2,take a short nap
+sad,7,5,4,1,self compassion break
+happy,6,3,8,3,start a challenging task
+calm,8,1,3,3,mindful meditation
+overwhelmed,9,4,4,1,breathing exercise
+calm,8,3,7,2,mindful meditation
+motivated,7,3,7,4,start a challenging task
+motivated,8,2,8,3,start a challenging task
+calm,9,3,8,4,mindful meditation
+sad,6,4,2,3,self compassion break
+sad,7,5,2,3,self compassion break
+sad,6,2,1,1,gratitude practice
+happy,6,1,6,3,start a challenging task
+stressed,7,5,5,2,mindful meditation
+anxious,6,5,5,3,breathing exercise
+sad,5,4,2,3,self compassion break
+sad,6,5,0,1,self compassion break
+sad,4,4,0,1,self compassion break
+tired,4,4,4,3,take a short nap
+overwhelmed,5,4,5,1,take a short nap
+happy,9,1,8,5,start a challenging task
+tired,6,4,5,4,take a short nap
+anxious,5,4,0,1,take a short nap
+motivated,8,1,10,5,start a challenging task
+anxious,6,5,2,3,breathing exercise
+overwhelmed,5,5,6,2,take a short nap
+motivated,9,2,10,4,start a challenging task
+tired,4,4,4,2,take a short nap
+tired,6,3,4,1,take a short nap
+sad,5,4,1,3,self compassion break
+overwhelmed,3,5,4,2,take a short nap
+motivated,8,1,8,3,start a challenging task
+stressed,4,4,6,1,take a short nap
+anxious,6,4,2,2,gratitude practice
+motivated,6,3,10,5,start a challenging task
+happy,7,3,8,4,start a challenging task
+tired,6,4,1,2,take a short nap
+tired,4,3,5,2,take a short nap
+calm,9,1,6,3,mindful meditation
+happy,9,1,8,3,start a challenging task
+anxious,5,4,3,2,take a short nap
+calm,8,2,8,2,deep work session
+sad,7,3,2,2,gratitude practice
+stressed,7,5,4,2,mindful meditation
+tired,6,3,3,2,take a short nap
+tired,5,4,2,1,take a short nap
+motivated,6,1,9,5,start a challenging task
+sad,5,2,0,3,social connection
+calm,9,1,7,2,deep work session
+motivated,4,5,6,4,take a short nap
+calm,6,3,8,2,mindful meditation
+motivated,9,2,8,4,start a challenging task
+happy,9,1,7,3,start a challenging task
+calm,7,3,4,5,mindful meditation
+happy,7,2,9,5,start a challenging task
+sad,3,4,0,3,self compassion break
+overwhelmed,4,5,8,2,take a short nap
+sad,3,5,0,2,self compassion break
+overwhelmed,3,4,3,1,take a short nap
+motivated,8,3,8,5,start a challenging task
+sad,3,2,1,3,social connection
+calm,7,3,8,5,mindful meditation
+sad,4,2,4,2,gratitude practice
+overwhelmed,6,5,7,1,digital detox
+tired,4,3,4,3,take a short nap
+tired,6,2,4,4,take a short nap
+happy,7,1,7,3,start a challenging task
+stressed,6,4,5,1,mindful meditation
+tired,3,2,4,2,take a short nap
+sad,4,3,0,3,social connection
+anxious,4,4,3,3,take a short nap
+motivated,6,1,7,5,start a challenging task
+happy,8,2,8,4,start a challenging task
+sad,5,3,1,2,gratitude practice
+sad,7,4,3,3,self compassion break
+stressed,7,3,5,2,mindful meditation
+calm,9,1,8,3,deep work session
+calm,4,5,3,2,mindful meditation
+anxious,6,5,0,2,gratitude practice
+calm,9,3,3,4,mindful meditation
+overwhelmed,5,4,3,1,take a short nap
+happy,8,5,8,4,start a challenging task
+happy,7,3,9,5,start a challenging task
+stressed,5,4,4,2,take a short nap
+stressed,7,5,6,1,mindful meditation
+overwhelmed,3,4,4,1,take a short nap
+sad,7,2,3,1,gratitude practice
+sad,4,4,3,2,self compassion break
+overwhelmed,3,5,6,2,take a short nap
+happy,8,1,7,5,start a challenging task
+tired,3,5,3,4,take a short nap
+sad,5,5,2,3,self compassion break
+overwhelmed,6,4,4,2,breathing exercise
+anxious,3,4,1,1,take a short nap
+calm,6,1,6,2,mindful meditation
+happy,9,2,5,3,start a challenging task
+motivated,6,1,9,4,start a challenging task
+motivated,9,2,7,3,start a challenging task
+anxious,5,5,1,2,take a short nap
+anxious,4,4,0,1,take a short nap
+overwhelmed,4,4,7,2,take a short nap
+overwhelmed,3,5,7,2,take a short nap
+calm,8,1,4,3,mindful meditation
+overwhelmed,5,5,5,2,take a short nap
+tired,5,2,4,4,take a short nap
+motivated,8,1,8,3,start a challenging task
+happy,6,1,6,5,start a challenging task
+tired,5,4,5,1,take a short nap
+tired,6,2,4,2,take a short nap
+happy,7,3,7,3,start a challenging task
+anxious,4,4,2,1,take a short nap
+tired,9,1,5,4,light exercise
+overwhelmed,3,5,6,2,take a short nap
+calm,9,3,4,5,mindful meditation
+anxious,3,5,0,2,take a short nap
+calm,8,2,3,4,creative activity
+anxious,6,2,0,1,gratitude practice
+tired,6,3,3,1,take a short nap
+anxious,5,5,3,1,take a short nap
+anxious,5,5,3,3,take a short nap
+sad,6,4,0,3,self compassion break
+overwhelmed,6,4,7,2,digital detox
+motivated,8,3,9,5,start a challenging task
+sad,3,2,2,3,social connection
+anxious,4,5,0,2,take a short nap
+happy,6,2,5,3,start a challenging task
+happy,8,3,7,3,start a challenging task
+overwhelmed,4,5,6,2,take a short nap
+motivated,8,1,6,4,deep work session
+overwhelmed,7,1,6,2,breathing exercise
+stressed,6,3,6,1,mindful meditation
+happy,8,3,8,5,start a challenging task
+happy,8,2,10,5,start a challenging task
+calm,7,3,4,4,mindful meditation
+tired,4,4,2,3,take a short nap
+stressed,5,5,3,1,take a short nap
+motivated,8,1,8,3,start a challenging task
+anxious,5,4,3,1,take a short nap
+overwhelmed,4,5,4,2,take a short nap
+calm,7,1,5,3,mindful meditation
+overwhelmed,5,4,8,2,take a short nap
+calm,7,1,3,5,creative activity
+anxious,5,5,0,3,take a short nap
+tired,4,2,3,1,take a short nap
+tired,3,2,1,3,take a short nap
+stressed,5,4,7,1,take a short nap
+anxious,4,5,2,3,take a short nap
+anxious,5,4,3,2,take a short nap
+stressed,4,3,2,1,take a short nap
+overwhelmed,4,5,9,2,take a short nap
+sad,5,5,0,1,self compassion break
+anxious,6,5,2,3,breathing exercise
+happy,8,3,8,4,start a challenging task
+sad,7,2,3,1,gratitude practice
+tired,6,4,1,1,take a short nap
+sad,3,3,3,2,gratitude practice
+anxious,5,4,0,3,take a short nap
+sad,7,2,2,1,gratitude practice
+sad,4,2,1,2,gratitude practice
+happy,8,1,5,5,deep work session
+overwhelmed,4,5,8,2,take a short nap
+overwhelmed,4,5,6,2,take a short nap
+calm,8,2,3,4,creative activity
+tired,3,3,2,3,take a short nap
+stressed,8,5,6,1,mindful meditation
+anxious,4,4,1,3,take a short nap
+happy,6,3,6,3,start a challenging task
+stressed,7,4,5,3,breathing exercise
+stressed,7,5,6,3,breathing exercise
+calm,6,2,3,3,mindful meditation
+overwhelmed,3,4,7,2,take a short nap
+tired,4,2,5,3,take a short nap
+happy,3,3,10,5,start a challenging task
+happy,7,2,5,5,deep work session
+motivated,8,3,8,3,start a challenging task
+overwhelmed,3,5,4,1,take a short nap
+happy,7,1,6,3,start a challenging task
+overwhelmed,4,5,6,1,take a short nap
+tired,3,2,4,4,take a short nap
+overwhelmed,6,4,4,2,breathing exercise
+happy,6,3,8,5,start a challenging task
+tired,6,4,3,3,take a short nap
+overwhelmed,6,4,7,1,digital detox
+tired,5,4,2,3,take a short nap
+motivated,8,2,10,4,start a challenging task
+motivated,6,1,8,5,start a challenging task
+stressed,5,5,5,1,take a short nap
+sad,7,4,1,2,self compassion break
+anxious,9,3,2,1,gratitude practice
+sad,5,3,0,1,gratitude practice
+anxious,3,5,1,3,take a short nap
+overwhelmed,6,5,9,2,digital detox
+calm,6,2,4,2,mindful meditation
+motivated,8,2,10,4,start a challenging task
+anxious,6,5,0,3,breathing exercise
+motivated,9,3,6,4,deep work session
+anxious,5,5,2,2,take a short nap
+stressed,6,5,7,3,digital detox
+stressed,6,5,4,3,breathing exercise
+happy,8,1,6,4,deep work session
+motivated,6,2,10,5,start a challenging task
+calm,7,2,8,4,deep work session
+overwhelmed,6,4,3,2,breathing exercise
+overwhelmed,3,5,5,1,take a short nap
+calm,9,3,3,4,mindful meditation
+overwhelmed,3,4,6,2,take a short nap
+sad,4,2,2,3,social connection
+motivated,7,2,7,4,start a challenging task
+overwhelmed,3,4,8,2,take a short nap
+tired,6,4,4,3,take a short nap
+happy,8,2,10,4,start a challenging task
+anxious,6,4,2,3,breathing exercise
+overwhelmed,5,5,7,1,take a short nap
+motivated,6,1,6,4,start a challenging task
+sad,7,4,3,2,self compassion break
+overwhelmed,3,5,3,1,take a short nap
+calm,7,2,5,5,creative activity
+stressed,6,4,6,1,mindful meditation
+motivated,7,3,9,4,start a challenging task
+stressed,6,4,6,3,breathing exercise
+happy,7,2,10,4,start a challenging task
+tired,4,2,5,3,take a short nap
+tired,5,4,0,3,take a short nap
+calm,6,2,8,3,mindful meditation
+happy,9,2,5,3,start a challenging task
+sad,4,2,1,2,gratitude practice
+anxious,6,5,3,1,breathing exercise
+sad,7,2,3,1,gratitude practice
+happy,8,1,8,3,start a challenging task
+anxious,5,5,0,3,take a short nap
+sad,7,5,2,2,self compassion break
+motivated,7,2,8,4,start a challenging task
+motivated,8,3,8,3,start a challenging task
+overwhelmed,5,5,6,1,take a short nap
+motivated,8,3,8,3,start a challenging task
+happy,3,5,5,4,take a short nap
+tired,6,2,2,1,take a short nap
+happy,4,3,5,5,start a challenging task
+stressed,5,4,2,3,take a short nap
+sad,7,4,4,2,self compassion break
+happy,6,1,7,3,start a challenging task
+stressed,4,4,2,2,take a short nap
+overwhelmed,4,5,4,2,take a short nap
+overwhelmed,3,4,3,1,take a short nap
+anxious,4,4,5,3,take a short nap
+overwhelmed,4,5,9,1,take a short nap
+tired,4,2,0,1,take a short nap
+anxious,3,4,4,3,take a short nap
+stressed,4,5,3,1,take a short nap
+motivated,6,2,10,4,start a challenging task
+overwhelmed,5,5,4,2,take a short nap
+sad,3,4,4,1,self compassion break
+anxious,4,4,4,2,take a short nap
+happy,7,3,5,5,deep work session
+calm,6,3,5,2,mindful meditation
+happy,7,3,5,5,deep work session
+happy,6,4,8,4,start a challenging task
+calm,8,1,8,2,deep work session
+overwhelmed,4,4,5,1,take a short nap
+sad,6,2,3,3,write in journal
+anxious,4,5,0,3,take a short nap
+anxious,5,5,1,1,take a short nap
+overwhelmed,4,4,8,1,take a short nap
+stressed,6,5,4,2,mindful meditation
+stressed,9,2,7,2,digital detox
+anxious,3,5,0,2,take a short nap
+stressed,7,3,2,2,mindful meditation
+overwhelmed,3,4,3,1,take a short nap
+motivated,8,3,7,3,start a challenging task
+anxious,6,5,0,1,gratitude practice
+tired,6,3,5,2,take a short nap
+anxious,4,4,2,1,take a short nap
+stressed,6,4,3,1,mindful meditation
+overwhelmed,4,5,6,1,take a short nap
+anxious,7,2,3,2,breathing exercise
+anxious,3,4,3,2,take a short nap
+stressed,7,4,4,1,mindful meditation
+calm,8,1,3,5,creative activity
+overwhelmed,6,5,8,1,digital detox
+stressed,4,4,5,2,take a short nap
+overwhelmed,4,5,7,2,take a short nap
+anxious,8,5,0,2,gratitude practice
+motivated,7,2,10,4,start a challenging task
+calm,6,2,3,5,mindful meditation
+stressed,6,2,5,3,breathing exercise
+stressed,6,3,5,2,mindful meditation
+calm,7,2,8,4,deep work session
+stressed,7,3,7,3,digital detox
+stressed,9,3,3,3,breathing exercise
+sad,7,2,2,2,gratitude practice
+calm,7,3,5,5,mindful meditation
+calm,7,2,5,4,creative activity
+stressed,5,5,5,3,take a short nap
+stressed,5,3,5,2,take a short nap
+stressed,4,3,2,3,take a short nap
+tired,3,2,3,1,take a short nap
+overwhelmed,6,4,4,2,breathing exercise
+stressed,7,5,2,3,breathing exercise
+stressed,7,3,4,1,mindful meditation
+stressed,5,3,5,2,take a short nap
+anxious,5,5,3,1,take a short nap
+anxious,4,4,2,3,take a short nap
+stressed,5,3,7,3,take a short nap
+overwhelmed,3,5,4,2,take a short nap
+overwhelmed,6,5,8,2,digital detox
+anxious,3,5,5,2,take a short nap
+overwhelmed,4,4,4,1,take a short nap
+sad,3,1,2,1,gratitude practice
+calm,8,3,7,3,mindful meditation
+tired,5,3,5,3,take a short nap
+overwhelmed,6,5,8,1,digital detox
+calm,6,2,3,4,mindful meditation
+calm,6,1,7,5,mindful meditation
+calm,9,1,4,5,creative activity
+tired,5,3,3,3,take a short nap
+stressed,4,5,3,1,take a short nap
+anxious,3,4,2,2,take a short nap
+tired,3,2,3,1,take a short nap
+calm,9,2,4,4,creative activity
+tired,5,4,1,4,take a short nap
+calm,8,2,5,5,creative activity
+tired,3,3,4,4,take a short nap
+anxious,5,5,1,3,take a short nap
+calm,9,1,4,3,mindful meditation
+overwhelmed,6,2,3,2,breathing exercise
+stressed,7,4,5,3,breathing exercise
+motivated,9,4,8,5,start a challenging task
+overwhelmed,4,5,8,1,take a short nap
+happy,8,2,8,4,start a challenging task
+tired,4,4,2,4,take a short nap
+calm,7,2,8,3,deep work session
+stressed,6,4,6,1,mindful meditation
+calm,6,1,4,3,mindful meditation
+sad,4,4,4,1,self compassion break
+anxious,3,4,4,1,take a short nap
+anxious,3,5,2,1,take a short nap
+stressed,5,4,3,1,take a short nap
+sad,7,2,2,1,gratitude practice
+anxious,3,1,4,2,breathing exercise
+tired,6,2,4,2,take a short nap
+happy,8,2,6,3,start a challenging task
+motivated,9,1,7,4,start a challenging task
+sad,6,4,1,1,self compassion break
+sad,3,2,4,1,gratitude practice
+motivated,9,2,10,3,start a challenging task
+sad,5,4,2,3,self compassion break
+overwhelmed,5,5,7,2,take a short nap
+tired,6,3,2,2,take a short nap
+tired,6,3,0,2,take a short nap
+overwhelmed,3,4,6,2,take a short nap
+calm,6,1,4,2,mindful meditation
+overwhelmed,3,5,6,1,take a short nap
+calm,7,2,5,3,mindful meditation
+overwhelmed,6,4,5,2,breathing exercise
+sad,6,4,2,1,self compassion break
+anxious,5,5,2,1,take a short nap
+calm,9,1,8,3,deep work session
+calm,8,3,3,4,mindful meditation
+happy,7,1,5,3,start a challenging task
+sad,6,5,2,2,self compassion break
+overwhelmed,5,5,6,1,take a short nap
+anxious,3,4,4,3,take a short nap
+motivated,7,2,10,4,start a challenging task
+calm,6,1,6,3,mindful meditation
+tired,4,3,5,1,take a short nap
+tired,4,4,5,2,take a short nap
+sad,6,4,1,1,self compassion break
+sad,5,3,0,2,gratitude practice
+happy,9,3,5,4,deep work session
+happy,9,3,6,4,deep work session
+tired,3,3,5,1,take a short nap
+happy,6,1,7,3,start a challenging task
+tired,6,4,0,2,take a short nap
+happy,5,5,6,4,take a short nap
+anxious,4,5,2,3,take a short nap
+overwhelmed,3,4,3,1,take a short nap
+motivated,7,2,10,4,start a challenging task
+motivated,8,1,6,5,deep work session
+motivated,9,2,7,4,start a challenging task
+anxious,3,5,0,3,take a short nap
+motivated,9,4,7,3,start a challenging task
+calm,7,3,4,3,mindful meditation
+anxious,3,4,2,3,take a short nap
+tired,5,4,4,1,take a short nap
+tired,4,3,4,4,take a short nap
+stressed,5,4,7,2,take a short nap
+calm,9,1,4,4,creative activity
+tired,6,3,1,2,take a short nap
+stressed,5,4,3,1,take a short nap
+calm,7,3,8,2,mindful meditation
+overwhelmed,5,4,9,2,take a short nap
+happy,7,2,9,5,start a challenging task
+overwhelmed,3,5,8,1,take a short nap
+happy,6,3,10,3,start a challenging task
+tired,5,2,5,3,take a short nap
+tired,5,4,0,2,take a short nap
+motivated,8,2,8,4,start a challenging task
+motivated,8,1,10,4,start a challenging task
+happy,8,2,8,4,start a challenging task
+sad,7,3,2,1,gratitude practice
+happy,6,3,10,4,start a challenging task
+sad,6,2,4,3,write in journal
+tired,4,3,4,2,take a short nap
+sad,5,3,3,3,write in journal
+motivated,6,3,8,3,start a challenging task
+overwhelmed,3,4,6,1,take a short nap
+calm,9,3,4,2,mindful meditation
+anxious,5,5,2,3,take a short nap
+motivated,8,3,6,4,deep work session
+anxious,4,4,1,1,take a short nap
+tired,3,2,0,3,take a short nap
+stressed,5,4,5,1,take a short nap
+overwhelmed,5,4,9,2,take a short nap
+stressed,5,4,5,2,take a short nap
+motivated,7,3,10,3,start a challenging task
+overwhelmed,3,5,8,2,take a short nap
+sad,4,4,2,1,self compassion break
+overwhelmed,4,5,8,2,take a short nap
+motivated,7,3,9,3,start a challenging task
+sad,3,3,1,2,gratitude practice
+happy,9,2,10,5,start a challenging task
+happy,6,3,10,3,start a challenging task
+anxious,5,4,3,2,take a short nap
+calm,7,1,7,2,deep work session
+motivated,9,3,8,5,start a challenging task
+calm,9,2,6,4,creative activity
+anxious,5,5,5,1,take a short nap
+overwhelmed,6,5,8,2,digital detox
+overwhelmed,6,4,3,2,breathing exercise
+tired,4,3,0,3,take a short nap
+calm,9,2,3,3,mindful meditation
+stressed,6,3,6,1,mindful meditation
+tired,4,3,3,1,take a short nap
+tired,4,4,5,1,take a short nap
+stressed,5,5,6,1,take a short nap
+overwhelmed,3,5,6,1,take a short nap
+anxious,4,5,4,3,take a short nap
+tired,4,3,2,3,take a short nap
+happy,6,1,7,3,start a challenging task
+happy,7,1,10,4,start a challenging task
+sad,3,3,4,2,gratitude practice
+calm,7,1,7,4,deep work session
+stressed,6,3,2,3,breathing exercise
+stressed,5,1,5,1,take a short nap
+overwhelmed,4,5,3,1,take a short nap
+stressed,6,4,5,3,breathing exercise
+happy,9,3,7,5,start a challenging task
+stressed,7,4,7,1,digital detox
+sad,9,2,2,3,social connection
+calm,9,2,3,3,mindful meditation
+stressed,7,3,5,2,mindful meditation
+sad,4,5,3,2,self compassion break
+happy,6,1,7,3,start a challenging task
+happy,7,3,7,5,start a challenging task
+motivated,9,1,7,3,start a challenging task
+calm,3,4,8,2,mindful meditation
+motivated,9,2,7,4,start a challenging task
+stressed,6,4,5,1,mindful meditation
+happy,9,1,10,3,start a challenging task
+sad,3,2,4,1,gratitude practice
+happy,8,3,9,4,start a challenging task
+calm,9,1,8,3,deep work session
+overwhelmed,3,4,8,2,take a short nap
+anxious,4,4,3,1,take a short nap
+tired,3,4,1,4,take a short nap
+anxious,6,5,2,3,breathing exercise
+sad,4,3,0,2,gratitude practice
+stressed,7,3,6,3,breathing exercise
+anxious,6,5,2,1,gratitude practice
+overwhelmed,6,4,9,2,digital detox
+calm,7,2,7,5,deep work session
+overwhelmed,4,4,7,1,take a short nap
+calm,6,3,6,2,mindful meditation
+sad,6,3,1,2,gratitude practice
+happy,7,1,7,4,start a challenging task
+overwhelmed,6,4,5,1,breathing exercise
+sad,4,5,2,2,self compassion break
+calm,8,2,3,4,creative activity
+stressed,6,5,2,2,mindful meditation
+anxious,3,5,4,2,take a short nap
+calm,9,3,4,3,mindful meditation
+tired,4,4,4,2,take a short nap
+motivated,7,1,7,5,start a challenging task
+anxious,4,5,2,2,take a short nap
+sad,7,5,0,2,self compassion break
+calm,8,3,8,2,mindful meditation
+motivated,9,1,6,4,deep work session
+happy,9,2,6,3,start a challenging task
+stressed,5,5,3,2,take a short nap
+motivated,8,3,6,4,deep work session
+tired,6,2,5,4,take a short nap
+motivated,9,1,8,5,start a challenging task
+sad,4,4,3,3,self compassion break
+tired,6,4,3,2,take a short nap
+motivated,8,2,7,5,start a challenging task
+sad,6,5,1,1,self compassion break
+stressed,5,4,7,2,take a short nap
+anxious,5,4,3,1,take a short nap
+motivated,7,1,6,5,deep work session
+sad,6,4,3,1,self compassion break
+stressed,4,5,7,2,take a short nap
+anxious,4,4,4,1,take a short nap
+happy,8,3,9,3,start a challenging task
+anxious,5,4,5,1,take a short nap
+sad,7,2,0,2,gratitude practice
+tired,3,4,3,1,take a short nap
+stressed,5,3,3,3,take a short nap
+happy,7,2,5,5,deep work session
+stressed,6,4,2,1,mindful meditation
+motivated,6,1,6,4,start a challenging task
+tired,5,2,5,3,take a short nap
+motivated,9,3,7,5,start a challenging task
+happy,9,2,7,4,start a challenging task
+anxious,3,5,3,3,take a short nap
+tired,6,2,4,4,take a short nap
+anxious,4,4,2,3,take a short nap
+tired,5,2,0,3,take a short nap
+tired,4,4,5,1,take a short nap
+stressed,5,3,7,2,take a short nap
+sad,6,2,3,2,gratitude practice
+stressed,6,5,5,1,mindful meditation
+tired,4,3,5,4,take a short nap

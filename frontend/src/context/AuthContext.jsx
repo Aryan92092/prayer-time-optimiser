@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
-import { supabase } from '../lib/supabase';
 import { signIn, signUp, signOut } from '../services/authService';
+import api from '../lib/api';
 
 const AuthContext = createContext();
 
@@ -8,63 +8,39 @@ export const AuthProvider = ({ children }) => {
     const [user, setUser] = useState(null);
     const [loading, setLoading] = useState(true);
 
+    // On app load: check if a stored JWT is still valid
     useEffect(() => {
-        // Get initial session
-        supabase.auth.getSession().then(({ data: { session } }) => {
-            if (session?.user) {
-                enrichUser(session.user);
-            } else {
-                setLoading(false);
-            }
-        });
-
-        // Listen for auth changes (login, logout, token refresh)
-        const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
-            if (session?.user) {
-                enrichUser(session.user);
-            } else {
-                setUser(null);
-                setLoading(false);
-            }
-        });
-
-        return () => subscription.unsubscribe();
-    }, []);
-
-    // Fetch name from profiles table and merge into user object
-    const enrichUser = async (authUser) => {
-        try {
-            const { data: profile } = await supabase
-                .from('profiles')
-                .select('name, role')
-                .eq('id', authUser.id)
-                .single();
-
-            setUser({
-                id: authUser.id,
-                email: authUser.email,
-                name: profile?.name || authUser.user_metadata?.name || authUser.email,
-                role: profile?.role || 'user',
-            });
-        } catch {
-            setUser({ id: authUser.id, email: authUser.email, name: authUser.email });
-        } finally {
+        const token = localStorage.getItem('hp_token');
+        if (!token) {
             setLoading(false);
+            return;
         }
-    };
+        // Validate token and hydrate user
+        api.get('/auth/me')
+            .then(({ data }) => setUser(data))
+            .catch(() => {
+                localStorage.removeItem('hp_token');
+                setUser(null);
+            })
+            .finally(() => setLoading(false));
+    }, []);
 
     const login = async (email, password) => {
         const data = await signIn(email, password);
+        setUser(data.user);
         return data;
     };
 
     const register = async ({ name, email, password }) => {
         const data = await signUp(email, password, name);
+        setUser(data.user);
         return data;
     };
 
-    const logout = async () => {
-        await signOut();
+    const logout = () => {
+        signOut();
+        // Clear any legacy localStorage mood data from before DB migration
+        localStorage.removeItem('hp_mood_checkins');
         setUser(null);
     };
 

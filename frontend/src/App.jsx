@@ -9,11 +9,33 @@ import OnboardingPage from './pages/OnboardingPage';
 import DashboardPage from './pages/DashboardPage';
 import JournalPage from './pages/JournalPage';
 import ProfilePage from './pages/ProfilePage';
+import EmailVerifiedPage from './pages/EmailVerifiedPage';
+import ForgotPasswordPage from './pages/ForgotPasswordPage';
+import ResetPasswordPage from './pages/ResetPasswordPage';
+import { TimerProvider } from './context/TimerContext';
+import FocusTimerModal from './components/FocusTimerModal';
+import TaskDetailsPage from './pages/TaskDetailsPage';
+import MoodCheckInPage from './pages/MoodCheckInPage';
+import HealingPage from './pages/HealingPage';
 
+// Shows a nice spinner while session is being restored
 const ProtectedRoute = ({ children }) => {
   const { user, loading } = useAuth();
-  if (loading) return <div>Loading...</div>;
-  if (!user) return <Navigate to="/login" />;
+  if (loading) return (
+    <div className="flex flex-col items-center justify-center min-h-[70vh] gap-6">
+      <div className="w-14 h-14 border-4 border-primary border-t-saffron rounded-full animate-spin" />
+      <p className="text-slate-400 font-black uppercase tracking-[0.2em] text-xs animate-pulse">Aligning Your Spirit...</p>
+    </div>
+  );
+  if (!user) return <Navigate to="/login" replace />;
+  return children;
+};
+
+// Redirects logged-in users away from public auth pages
+const AuthRoute = ({ children }) => {
+  const { user, loading } = useAuth();
+  if (loading) return null; // don't flash redirect
+  if (user) return <Navigate to="/dashboard" replace />;
   return children;
 };
 
@@ -34,50 +56,82 @@ function App() {
 
   return (
     <AuthProvider>
-      <Router>
-        <div className="min-h-screen transition-colors duration-500 selection:bg-primary/30">
-          <Navbar theme={theme} toggleTheme={toggleTheme} />
-          <main className="container mx-auto px-4 py-8">
-            <Routes>
-              <Route path="/" element={<LandingPage />} />
-              <Route path="/login" element={<LoginPage />} />
-              <Route path="/register" element={<RegisterPage />} />
-              <Route
-                path="/onboarding"
-                element={
-                  <ProtectedRoute>
-                    <OnboardingPage />
-                  </ProtectedRoute>
-                }
-              />
-              <Route
-                path="/dashboard"
-                element={
-                  <ProtectedRoute>
-                    <DashboardPage />
-                  </ProtectedRoute>
-                }
-              />
-              <Route
-                path="/journal"
-                element={
-                  <ProtectedRoute>
-                    <JournalPage />
-                  </ProtectedRoute>
-                }
-              />
-              <Route
-                path="/profile"
-                element={
-                  <ProtectedRoute>
-                    <ProfilePage />
-                  </ProtectedRoute>
-                }
-              />
-            </Routes>
-          </main>
-        </div>
-      </Router>
+      <TimerProvider>
+        <Router>
+          <div className="min-h-screen transition-colors duration-500 selection:bg-primary/30 relative">
+            <Navbar theme={theme} toggleTheme={toggleTheme} />
+            <main className="container mx-auto px-4 py-8">
+              <Routes>
+                <Route path="/" element={<LandingPage />} />
+                <Route path="/login" element={<AuthRoute><LoginPage /></AuthRoute>} />
+                <Route path="/register" element={<AuthRoute><RegisterPage /></AuthRoute>} />
+                <Route path="/email-verified" element={<EmailVerifiedPage />} />
+                <Route path="/forgot-password" element={<ForgotPasswordPage />} />
+                <Route path="/reset-password" element={<ResetPasswordPage />} />
+                <Route
+                  path="/onboarding"
+                  element={
+                    <ProtectedRoute>
+                      <OnboardingPage />
+                    </ProtectedRoute>
+                  }
+                />
+                <Route
+                  path="/dashboard"
+                  element={
+                    <ProtectedRoute>
+                      <DashboardPage />
+                    </ProtectedRoute>
+                  }
+                />
+                <Route
+                  path="/mood-checkin"
+                  element={
+                    <ProtectedRoute>
+                      <MoodCheckInPage />
+                    </ProtectedRoute>
+                  }
+                />
+                <Route
+                  path="/task/:taskId"
+                  element={
+                    <ProtectedRoute>
+                      <TaskDetailsPage />
+                    </ProtectedRoute>
+                  }
+                />
+                <Route
+                  path="/journal"
+                  element={
+                    <ProtectedRoute>
+                      <JournalPage />
+                    </ProtectedRoute>
+                  }
+                />
+                <Route
+                  path="/profile"
+                  element={
+                    <ProtectedRoute>
+                      <ProfilePage />
+                    </ProtectedRoute>
+                  }
+                />
+                <Route
+                  path="/healing"
+                  element={
+                    <ProtectedRoute>
+                      <HealingPage />
+                    </ProtectedRoute>
+                  }
+                />
+              </Routes>
+            </main>
+
+            {/* Global Timer Modal */}
+            <FocusTimerModal />
+          </div>
+        </Router>
+      </TimerProvider>
     </AuthProvider>
   );
 }

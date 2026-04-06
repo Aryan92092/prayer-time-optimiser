@@ -76,6 +76,11 @@ const LoginPage = () => {
                     >
                         Re-Enter Sanctuary
                     </button>
+                    <div className="text-right mt-3">
+                        <Link to="/forgot-password" className="text-xs font-black text-slate-400 hover:text-primary transition-colors uppercase tracking-widest">
+                            Forgot Password?
+                        </Link>
+                    </div>
                 </form>
 
                 <p className="mt-12 text-slate-500 dark:text-slate-400 font-medium">

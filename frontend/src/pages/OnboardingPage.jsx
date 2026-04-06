@@ -169,16 +169,61 @@ const OnboardingPage = () => {
                                         </div>
                                     </button>
 
-                                    <div className="mt-8 grid grid-cols-2 gap-3 h-32">
-                                        {['hindu', 'muslim', 'sikh', 'christian'].map(rel => (
-                                            <button
-                                                key={rel}
-                                                disabled={formData.spiritual_preference !== 'religious'}
-                                                onClick={() => setFormData({ ...formData, religion_type: rel })}
-                                                className={`py-3 px-4 rounded-xl border-2 font-black text-xs uppercase tracking-widest capitalize transition-all ${formData.religion_type === rel ? 'bg-white text-saffron border-white' : 'border-white/20 hover:border-white/50 text-white/70'}`}
-                                            >
-                                                {rel}
-                                            </button>
+                                    <div className="mt-8 pr-2 max-h-[400px] overflow-y-auto space-y-6 custom-scrollbar">
+                                        {[
+                                            {
+                                                category: "Abrahamic",
+                                                religions: ['christian', 'muslim', 'judaism', 'bahai', 'druze', 'samaritanism']
+                                            },
+                                            {
+                                                category: "Dharmic",
+                                                religions: ['hindu', 'buddhism', 'jainism', 'sikh', 'ayyavazhi']
+                                            },
+                                            {
+                                                category: "East Asian",
+                                                religions: ['taoism', 'confucianism', 'shinto', 'chinese_folk', 'tenrikyo']
+                                            },
+                                            {
+                                                category: "Indigenous & Tribal",
+                                                religions: ['african_traditional', 'native_american', 'australian_aboriginal', 'maori', 'shamanism', 'amazonian', 'inuit', 'pacific_island']
+                                            },
+                                            {
+                                                category: "Iranian",
+                                                religions: ['zoroastrianism', 'yazidism', 'manichaeism', 'zurvanism']
+                                            },
+                                            {
+                                                category: "New Movements",
+                                                religions: ['scientology', 'raelism', 'falun_gong', 'unification_church', 'eckankar']
+                                            },
+                                            {
+                                                category: "Philosophical / Non-theistic",
+                                                religions: ['atheism', 'agnosticism', 'humanism', 'stoicism', 'existentialism']
+                                            }
+                                        ].map(group => (
+                                            <div key={group.category} className="space-y-3">
+                                                <h4 className={`text-xs font-black uppercase tracking-widest ${formData.spiritual_preference === 'religious' ? 'text-white/90 border-b border-white/20 pb-2' : 'text-slate-500 border-b border-slate-700 pb-2'}`}>
+                                                    {group.category}
+                                                </h4>
+                                                <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
+                                                    {group.religions.map(rel => (
+                                                        <button
+                                                            key={rel}
+                                                            disabled={formData.spiritual_preference !== 'religious'}
+                                                            onClick={e => {
+                                                                e.stopPropagation();
+                                                                setFormData({ ...formData, religion_type: rel, spiritual_preference: 'religious' });
+                                                            }}
+                                                            className={`py-2 px-2 rounded-xl border-2 font-bold text-[10px] sm:text-xs tracking-wider capitalize transition-all ${
+                                                                formData.religion_type === rel 
+                                                                ? 'bg-white text-saffron border-white shadow-md' 
+                                                                : 'border-white/20 hover:border-white/50 text-white/80 hover:bg-white/5'
+                                                            }`}
+                                                        >
+                                                            {rel.replace(/_/g, ' ')}
+                                                        </button>
+                                                    ))}
+                                                </div>
+                                            </div>
                                         ))}
                                     </div>
                                 </div>

@@ -1,0 +1,28 @@
+# ----- Environment secrets — NEVER commit these -----
+.env
+.env.local
+.env.production
+.env.*
+
+# Node modules
+node_modules/
+*/node_modules/
+
+# Build outputs
+dist/
+build/
+frontend/dist/
+
+# Python
+__pycache__/
+*.pyc
+ai-mood-engine/venv/
+*.pkl
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db

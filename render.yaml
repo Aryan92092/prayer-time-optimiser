@@ -1,0 +1,43 @@
+services:
+  # ── 1. Node.js Backend ──────────────────────────────────────
+  - type: web
+    name: hopepath-backend
+    runtime: node
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: node src/index.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 5000
+      - key: DATABASE_URL
+        sync: false        # Set manually in Render dashboard
+      - key: JWT_SECRET
+        sync: false        # Set manually in Render dashboard
+      - key: CORS_ORIGIN
+        sync: false        # Set to your frontend URL after frontend is deployed
+
+  # ── 2. Python AI Mood Engine ────────────────────────────────
+  - type: web
+    name: hopepath-ai-engine
+    runtime: python
+    rootDir: ai-mood-engine
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn api.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: OPENAI_API_KEY
+        sync: false        # Set manually in Render dashboard
+
+  # ── 3. React Frontend (Static Site) ─────────────────────────
+  - type: web
+    name: hopepath-frontend
+    runtime: static
+    rootDir: frontend
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist
+    envVars:
+      - key: VITE_API_URL
+        sync: false        # Set to your backend URL after backend is deployed
+      - key: VITE_AI_API_URL
+        sync: false        # Set to your AI engine URL after it is deployed

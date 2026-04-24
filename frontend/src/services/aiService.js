@@ -58,3 +58,34 @@ export const getAIRecommendation = async (answers) => {
         return FALLBACK;
     }
 };
+
+/**
+ * Calls the Sacred Chat API with user's message and spiritual profile.
+ * 
+ * @param {string} message - The user's input message
+ * @param {Object} profile - User's profile (spiritual_preference, religion_type)
+ * @param {Array} history - Previous messages [{role: 'user'|'assistant', content: '...'}]
+ */
+export const sendSacredChatMessage = async (message, profile, history = []) => {
+    try {
+        const response = await fetch(`${AI_API_URL}/api/sacred/chat`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                message,
+                spiritual_preference: profile?.spiritual_preference || 'non-religious',
+                religion_type: profile?.religion_type || '',
+                history: history.slice(-4) // Keep only last 4 messages to save tokens
+            }),
+            signal: AbortSignal.timeout(10000), // 10s timeout
+        });
+
+        if (!response.ok) throw new Error('API Error');
+
+        const data = await response.json();
+        return data.reply;
+    } catch (err) {
+        console.error("Sacred Chat Error:", err);
+        return "I am here with you, even in the silence. Take a deep breath, and know that you are safe and supported.";
+    }
+};

@@ -42,7 +42,9 @@ router.put('/', async (req, res) => {
 
 // ── PUT /api/v1/profile/spiritual ────────────────────────
 router.put('/spiritual', async (req, res) => {
-    const { stress_level, overwhelm_reason, spiritual_preference, religion_type, user_role } = req.body;
+    const { stress_level, overwhelm_reason, spiritual_preference, religion_type, user_role, spiritual_role } = req.body;
+    const roleToSave = user_role || spiritual_role || 'seeker';
+
     try {
         const { rows } = await pool.query(
             `INSERT INTO user_profiles (user_id, stress_level, overwhelm_reason, spiritual_preference, religion_type, user_role)
@@ -54,11 +56,37 @@ router.put('/spiritual', async (req, res) => {
          religion_type = EXCLUDED.religion_type,
          user_role = EXCLUDED.user_role
        RETURNING *`,
-            [req.user.id, stress_level, overwhelm_reason, spiritual_preference, religion_type, user_role]
+            [req.user.id, stress_level, overwhelm_reason, spiritual_preference, religion_type, roleToSave]
         );
         return res.json(rows[0]);
     } catch (err) {
         console.error('Update spiritual profile error:', err.message);
+        return res.status(500).json({ error: 'Server error.' });
+    }
+});
+
+// ── GET /api/v1/profile/activity ────────────────────────
+router.get('/activity', async (req, res) => {
+    try {
+        const { rows } = await pool.query(
+            `SELECT 'mood' as type, 'Completed Mood Check-in' as title, created_at as date 
+             FROM mood_checkins 
+             WHERE user_id = $1
+             UNION ALL 
+             SELECT 'journal' as type, 'Wrote a Journal Entry' as title, created_at as date 
+             FROM journals 
+             WHERE user_id = $1
+             UNION ALL
+             SELECT 'schedule' as type, 'Completed ' || activity_title as title, created_at as date
+             FROM schedule_entries
+             WHERE user_id = $1 AND completed = true
+             ORDER BY date DESC 
+             LIMIT 5`,
+            [req.user.id]
+        );
+        return res.json(rows);
+    } catch (err) {
+        console.error('Get activity error:', err.message);
         return res.status(500).json({ error: 'Server error.' });
     }
 });

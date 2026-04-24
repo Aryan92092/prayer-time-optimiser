@@ -22,3 +22,9 @@ export const updateProfile = async (updates) => {
     const { data } = await api.put('/profile', updates);
     return data;
 };
+
+/** Get recent activity */
+export const getActivity = async () => {
+    const { data } = await api.get('/profile/activity');
+    return data;
+};

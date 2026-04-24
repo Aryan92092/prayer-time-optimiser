@@ -501,6 +501,61 @@ def dr_aisha_chat(req: ChatRequest):
         }
 
 
+# ── Sacred Chat (Personalized Spiritual Guide) ────────────────────────────────
+class SacredChatRequest(BaseModel):
+    message: str
+    spiritual_preference: str = "non-religious"
+    religion_type: str = ""
+    history: list[dict] = []
+
+@app.post("/api/sacred/chat")
+def sacred_chat(req: SacredChatRequest):
+    """
+    Generates a personalized response from a spiritual guide based on the user's path.
+    """
+    try:
+        if req.spiritual_preference == "religious" and req.religion_type:
+            path = req.religion_type.replace("_", " ").title()
+            system_prompt = (
+                f"You are a wise, compassionate, and deeply knowledgeable spiritual guide for the {path} path. "
+                f"You offer comfort, spiritual insights, and gentle encouragement grounded in the traditions, "
+                f"scriptures, and philosophies of {path}. "
+                "Speak with deep empathy, reverence, and warmth. Use 'we' or 'you' warmly. "
+                "Keep responses to 3-4 sentences maximum. Do not be overly preachy; be a comforting presence."
+            )
+        else:
+            system_prompt = (
+                "You are a wise, grounded, and compassionate mindfulness and life guide. "
+                "You offer comfort, stoic wisdom, and gentle encouragement grounded in secular mindfulness, "
+                "psychology, and inner peace. "
+                "Speak with deep empathy and warmth. Use 'we' or 'you' warmly. "
+                "Keep responses to 3-4 sentences maximum. Be a comforting, stabilizing presence."
+            )
+
+        messages = [{"role": "system", "content": system_prompt}]
+        
+        # Add limited history (last 4 messages to keep context window small)
+        for msg in req.history[-4:]:
+            messages.append({"role": msg["role"], "content": msg["content"]})
+            
+        messages.append({"role": "user", "content": req.message})
+
+        response = client.chat.completions.create(
+            model="gpt-4o-mini",
+            messages=messages,
+            max_tokens=250,
+            temperature=0.75,
+        )
+        reply = response.choices[0].message.content.strip()
+        return {"reply": reply}
+
+    except Exception as e:
+        print(f"Sacred chat error: {e}")
+        return {
+            "reply": "I am here with you, even in the silence. Take a deep breath, and know that you are safe and supported."
+        }
+
+
 # ── Predict Tasks Endpoint ────────────────────────────────────────────────────
 class TaskPredictionRequest(BaseModel):
     message_text: str

@@ -1,14 +1,24 @@
 import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { User, Settings, Shield, Bell, Heart, Mail, CheckCircle2 } from 'lucide-react';
+import { User, Settings, Shield, Bell, Heart, Mail, CheckCircle2, X, Send, Sparkles } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
-import { getProfile, setupProfile, subscribeProfile } from '../services/profileService';
+import { getProfile, setupProfile, subscribeProfile, getActivity } from '../services/profileService';
 import { cancelActiveProgram, createProgram } from '../services/programService';
+import { sendSacredChatMessage } from '../services/aiService';
 
 const ProfilePage = () => {
     const { user } = useAuth();
     const [profile, setProfile] = useState(null);
+    const [activities, setActivities] = useState([]);
     const [loading, setLoading] = useState(true);
+
+    // Sacred Chat State
+    const [isChatOpen, setIsChatOpen] = useState(false);
+    const [chatMessages, setChatMessages] = useState([
+        { role: 'assistant', content: 'Welcome, seeker. How is your heart today?' }
+    ]);
+    const [chatInput, setChatInput] = useState('');
+    const [isChatLoading, setIsChatLoading] = useState(false);
 
     // Edit mode state
     const [isEditing, setIsEditing] = useState(false);
@@ -42,6 +52,10 @@ const ProfilePage = () => {
                 });
             }
             setLoading(false);
+        });
+
+        getActivity().then(data => {
+            setActivities(data || []);
         });
 
         const unsub = subscribeProfile(user.id, (data) => {
@@ -98,6 +112,20 @@ const ProfilePage = () => {
         } finally {
             setIsSaving(false);
         }
+    };
+
+    const handleSendChat = async (e) => {
+        e.preventDefault();
+        if (!chatInput.trim() || isChatLoading) return;
+
+        const newMsg = { role: 'user', content: chatInput.trim() };
+        setChatMessages(prev => [...prev, newMsg]);
+        setChatInput('');
+        setIsChatLoading(true);
+
+        const reply = await sendSacredChatMessage(newMsg.content, profile, chatMessages);
+        setChatMessages(prev => [...prev, { role: 'assistant', content: reply }]);
+        setIsChatLoading(false);
     };
 
     if (loading) return (
@@ -292,17 +320,24 @@ const ProfilePage = () => {
                     <div className="glass-card p-10 border-slate-100 dark:border-slate-800">
                         <h3 className="text-2xl font-black mb-6 dark:text-white">Recent Activity</h3>
                         <div className="space-y-4">
-                            {[1, 2, 3].map((i) => (
-                                <div key={i} className="flex items-center gap-4 p-4 rounded-2xl bg-slate-50 dark:bg-white/5 border border-transparent hover:border-primary/20 transition-all group">
-                                    <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary">
-                                        <Heart size={18} />
+                            {activities.length > 0 ? activities.map((act, i) => {
+                                const diff = new Date() - new Date(act.date);
+                                const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+                                const timeStr = days === 0 ? 'Today' : days === 1 ? 'Yesterday' : `${days} days ago`;
+                                return (
+                                    <div key={i} className="flex items-center gap-4 p-4 rounded-2xl bg-slate-50 dark:bg-white/5 border border-transparent hover:border-primary/20 transition-all group">
+                                        <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+                                            <Heart size={18} />
+                                        </div>
+                                        <div className="flex-1">
+                                            <p className="font-bold text-sm dark:text-white">{act.title}</p>
+                                            <p className="text-xs text-slate-500 font-medium">{timeStr}</p>
+                                        </div>
                                     </div>
-                                    <div className="flex-1">
-                                        <p className="font-bold text-sm dark:text-white">Completed Morning Reflection</p>
-                                        <p className="text-xs text-slate-500 font-medium">{i} days ago</p>
-                                    </div>
-                                </div>
-                            ))}
+                                );
+                            }) : (
+                                <p className="text-sm text-slate-500 dark:text-slate-400">No recent activity yet. Begin your journey today.</p>
+                            )}
                         </div>
                     </div>
                 </div>
@@ -326,14 +361,97 @@ const ProfilePage = () => {
                         <h3 className="text-xl font-black mb-4 relative z-10">Premium Support</h3>
                         <p className="text-slate-400 text-sm mb-6 relative z-10 font-medium">Connect with our guides for personalized spiritual optimization.</p>
                         <button
-                            onClick={() => alert('🕊️ Sacred Chat is coming soon! Our spiritual guides will be available in the next update.')}
+                            onClick={() => setIsChatOpen(true)}
                             className="w-full bg-white text-slate-900 py-3 rounded-xl font-black text-xs uppercase tracking-widest hover:bg-primary hover:text-white transition-all relative z-10"
                         >
-                            Sacred Chat — Coming Soon
+                            Open Sacred Chat
                         </button>
                     </div>
                 </div>
             </div>
+
+            {/* Sacred Chat Modal */}
+            <AnimatePresence>
+                {isChatOpen && (
+                    <motion.div 
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-md"
+                    >
+                        <motion.div 
+                            initial={{ scale: 0.9, y: 20 }}
+                            animate={{ scale: 1, y: 0 }}
+                            exit={{ scale: 0.9, y: 20 }}
+                            className="w-full max-w-lg bg-white dark:bg-slate-900 rounded-[2.5rem] shadow-2xl overflow-hidden border border-slate-100 dark:border-slate-800 flex flex-col"
+                            style={{ height: '80vh', maxHeight: '700px' }}
+                        >
+                            {/* Header */}
+                            <div className="p-6 border-b border-slate-100 dark:border-slate-800 flex justify-between items-center bg-gradient-to-r from-primary/10 to-transparent">
+                                <div className="flex items-center gap-3">
+                                    <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-white shadow-lg shadow-primary/30">
+                                        <Sparkles size={18} />
+                                    </div>
+                                    <div>
+                                        <h3 className="font-black text-lg dark:text-white">Sacred Guide</h3>
+                                        <p className="text-xs text-slate-500 font-medium capitalize">{profile?.religion_type?.replace(/_/g, ' ') || 'Mindful Path'}</p>
+                                    </div>
+                                </div>
+                                <button onClick={() => setIsChatOpen(false)} className="w-10 h-10 flex items-center justify-center rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors text-slate-500">
+                                    <X size={20} />
+                                </button>
+                            </div>
+
+                            {/* Messages */}
+                            <div className="flex-1 overflow-y-auto p-6 space-y-6 custom-scrollbar bg-slate-50/50 dark:bg-slate-900/50">
+                                {chatMessages.map((msg, idx) => (
+                                    <div key={idx} className={`flex gap-3 ${msg.role === 'user' ? 'flex-row-reverse' : ''}`}>
+                                        <div className={`w-8 h-8 rounded-full flex-shrink-0 flex items-center justify-center ${msg.role === 'user' ? 'bg-slate-200 dark:bg-slate-700 text-slate-600 dark:text-slate-300' : 'bg-primary text-white'}`}>
+                                            {msg.role === 'user' ? <User size={14} /> : <Sparkles size={14} />}
+                                        </div>
+                                        <div className={`max-w-[80%] p-4 rounded-2xl text-sm font-medium leading-relaxed shadow-sm ${msg.role === 'user' ? 'bg-white dark:bg-slate-800 text-slate-800 dark:text-white rounded-tr-none border border-slate-100 dark:border-slate-700' : 'bg-primary text-white rounded-tl-none shadow-primary/20'}`}>
+                                            {msg.content}
+                                        </div>
+                                    </div>
+                                ))}
+                                {isChatLoading && (
+                                    <div className="flex gap-3">
+                                        <div className="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center">
+                                            <Sparkles size={14} className="animate-pulse" />
+                                        </div>
+                                        <div className="bg-primary/10 text-primary p-4 rounded-2xl rounded-tl-none text-sm font-bold flex items-center gap-1">
+                                            <span className="w-2 h-2 bg-primary rounded-full animate-bounce"></span>
+                                            <span className="w-2 h-2 bg-primary rounded-full animate-bounce" style={{animationDelay: '0.2s'}}></span>
+                                            <span className="w-2 h-2 bg-primary rounded-full animate-bounce" style={{animationDelay: '0.4s'}}></span>
+                                        </div>
+                                    </div>
+                                )}
+                            </div>
+
+                            {/* Input */}
+                            <form onSubmit={handleSendChat} className="p-4 border-t border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-900">
+                                <div className="relative">
+                                    <input 
+                                        type="text" 
+                                        value={chatInput}
+                                        onChange={(e) => setChatInput(e.target.value)}
+                                        placeholder="Share what is on your heart..." 
+                                        className="w-full bg-slate-50 dark:bg-slate-800 border-none rounded-2xl py-4 pl-6 pr-14 text-sm font-medium focus:ring-2 focus:ring-primary dark:text-white placeholder:text-slate-400 outline-none transition-all"
+                                        disabled={isChatLoading}
+                                    />
+                                    <button 
+                                        type="submit"
+                                        disabled={!chatInput.trim() || isChatLoading}
+                                        className="absolute right-2 top-2 bottom-2 aspect-square rounded-xl bg-primary text-white flex items-center justify-center hover:scale-105 active:scale-95 disabled:opacity-50 disabled:hover:scale-100 transition-all shadow-md shadow-primary/20"
+                                    >
+                                        <Send size={16} className="ml-1" />
+                                    </button>
+                                </div>
+                            </form>
+                        </motion.div>
+                    </motion.div>
+                )}
+            </AnimatePresence>
         </div>
     );
 };
